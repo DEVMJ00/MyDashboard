@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+</head>
+
+<!--  bleu : #023F6F  -  rouge : #E80249 -->
+
+<style>
+
+body {
+ #display : flex ; 
+ font-family: "Antonio", sans-serif;
+ #flex-direction : column ; 
+ align-items : center ; 
+ background-color : ghostwhite; 
+ height : 90vh;
+}
+
+h1 {
+  text-align : center ; 
+  color : #023F6F ;
+  margin-top : 2% ;
+  margin-bottom : 5% ;
+  margin-left : 10%;
+}
+
+content {
+ display : flex ; 
+ flex-direction : row ; 
+ 
+ width : 90%;
+}
+
+section {
+ display : flex ; 
+ flex-direction : row ; 
+ align-items : center ; 
+ justify-content: center;
+ flex-wrap : wrap;
+ gap : 50px ; 
+ width : 90%;
+ margin-left : 25%;
+
+}
+
+a {
+  text-decoration : none ; 
+  color : ghostwhite ; 
+}
+
+.card {
+   display : flex ; 
+   padding : 1% ;
+   flex-wrap : wrap ; 
+   min-width : 100px ;
+   width : 10vw ;
+   min-height : 100px;
+   background-color : #E80249 ;
+   border : 2px solid #023F6F;
+   border-radius : 20px ; 
+   box-shadow : 2px 2px 5px 2px rgba(0, 0, 0, 0.4) ;
+   justify-content : center ; 
+   align-items : center ; 
+   text-align : center ; 
+   margin-bottom : 15px ;
+   font-weight : bold ; 
+}
+
+.logo-google {
+    height:2rem;               /* même hauteur que le texte */
+    width:auto;
+    color : white ; 
+}
+
+.card:hover {
+   cursor : pointer ; 
+   background-color : #CC0240 ;
+   transform : scale(1.2) ;
+   transition : transform 90ms ;
+   
+}
+
+footer {
+ display : flex ;
+ position : fixed ;
+ left : 0;
+ bottom : 0 ; 
+ color : ghostwhite ; 
+ background-color : darkblue; 
+ width : 100% ; 
+ height : 45px; 
+ justify-content : center ;
+}
+
+
+ /* ---------- Sidebar (menu) ---------- */
+    .sidebar {
+      position: fixed;              /* reste visible pendant le scroll */
+      top: 0;
+      left: 0;
+      width: 15vw;                   /* 15 % de la largeur de la fenêtre */
+      max-width: 200px; 
+      min-width : 120px;
+      height: 100%;
+      background: lightgrey;
+      padding: 1rem;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      color : #023F6F; 
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin: 0.5rem 0;
+    }
+
+/*
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .sidebar a:hover {
+      color: #0066cc;
+    }
+*/
+
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+ 
+<header>
+  <h1> ACCUEIL SDH</h1>
+  
+</header>  
+
+
+<content>
+<aside class="sidebar">
+    <h2>MENU</h2>
+    <h3>✅n°tiers</h3>
+      <ul>
+       <!-- <li><a href="#accueil">Accueil</a></li> --> 
+           <li><strong> Cécile : </strong> 20277596 </li>
+	   <li><strong> Mario  : </strong> 20277439 </li>
+	   <li><strong> Emeline : </strong> 20232457</li>
+	   <li><strong> Linda : </strong> 20244502</li>
+	   <li><strong> Fiona : </strong> 20261812</li>
+	   <li><strong> Jérôme : </strong> </li>
+	   <li><strong> Nadine : </strong> </li>
+
+      </ul>
+    
+  </aside>
+
+
+<section>
+     <div>
+        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><div class="card" 
+	style=	"color: black ; 
+		background-color : #FFFFFF ;" title="Ouvrir une page Google">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+     alt="Google"
+  	style="max-width:100px;">
+	</div>
+	</a>
+     	</div>
+
+     <div>
+        <a href="http://srvuweb-p1//ULISNGE/index.do?clientHostName=%clientname%" target="_blank" rel="noopener noreferrer"><div class="card" style="background-color : #8FA7C8 ;" title="Démarrer avec Ulis" > Ulis </div></a>
+     </div>
+
+<div>
+  <a href="https://www.sdh.fr/accueil"
+     title="Se rendre sur la page de la SDH"
+     style="text-decoration:none;">
+    <div class="card" style="background-color:white; text-align:center;">
+      <img src="https://www.sdh.fr/o/prod-theme-18-03-2024/images/logo_normal.png"
+           alt="SDH"
+           style="max-width:100px;">  
+    </div>
+  </a>
+</div>
+
+
+ 
+     <div>
+       <a href="http://globalsdh/intranet/index.php?option=com_user&view=login&return=aHR0cDovL2dsb2JhbHNkaC9pbnRyYW5ldC9pbmRleC5waHA/b3B0aW9uPWNvbV90YWNoZSZ2aWV3PXRhY2hlJkl0ZW1pZD0x" target="_blank" rel="noopener noreferrer"><div class="card" style="background-color : #FFBC01 ;" title="Accéder à la plate-forme Travaux"> Travaux </div></a>
+     </div>
+
+
+
+   
+     <div>
+       <a href="https://sdh38.sharepoint.com/" target="_blank" rel="noopener noreferrer"><div class="card" style="background-color : #32B7C0 ;" title="Accéder au Sharepoint de la SDH"><img src="https://sdh38.sharepoint.com/_layouts/15/images/favicon.ico?rev=43"
+	alt="Sharepoint"
+	style="max-width : 100px ; padding : 10px ;">Sharepoint 
+	</div>
+	</a>
+	</div>
+  
+   
+     <div>
+       <a href="http://srvhoroquartz:8080/webquartz/eQuartz/auth.do?redirect=../eQuartz/home.HQ&deconnect=true" target="_blank" rel="noopener noreferrer"><div class="card" style="background-color : #D8EEAB; color:black;" title="Accéder à e-temptation"> e-Temptation </div></a>
+     </div>
+   
+
+     <div>
+       <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" ><div class="card" style="background-color: white; color: black" title="Accéder à GoogleMaps"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/2275px-Google_Maps_Logo_2020.svg.png"
+     	alt="Google"
+	style="max-width:100px;">
+     	</div>
+	</a>
+     	</div>
+
+     <div>
+       <a href="https://sdh38.sharepoint.com/:x:/r/sites/ep-p/_layouts/15/guestaccess.aspx?e=ddMM5z&share=EbxONjaDbGVPp4_7C1EwpigBN1nnLoFpFOW9ls8P2679VQ" target="_blank" rel="noopener noreferrer"><div class="card" title="Ouvrir le fichier Global.xls"> Global </div> </a>
+     </div>
+  
+     <div>
+       <a href="https://lead.novamap.fr/Logon.html" target="_blank" rel="noopener noreferrer" ><div class="card" style="background-color: white; color: black" title="Accéder à NLead"><img src="https://lead.novamap.fr/NLead/Application/img/favicon.ico"
+     	alt="NLead"
+	style="max-width:100px; height : auto ;"> N'Lead
+     	</div>
+	</a>
+     	</div>
+
+     <div>
+       <a href="https://sdh38.sharepoint.com/sites/dtps-p/Analyses%20contrats%20cadres%20PE/Forms/AllItems.aspx?csf=1&web=1&e=dbyKFe&CID=d0fbf096%2D24d6%2D4eee%2D83ab%2Dd8d4ea9ebed2&FolderCTID=0x012000EA8077697A7AF44DB32A4794324545D6&id=%2Fsites%2Fdtps%2Dp%2FAnalyses%20contrats%20cadres%20PE%2FContrats%20Cadres%20Documents%20utilisateurs%2001%2004%202024%20CAB%2FBPU%20CCTP" target="_blank" rel="noopener noreferrer"><div class="card" title="Ouvrir les BPU"> BPU Fournisseurs</div> </a>
+     </div>
+
+
+     <div>
+       <a href="https://sdh38.sharepoint.com/:x:/r/sites/dtps-p/Partage/PROXIMIT%C3%89/TER%2005%20-%20Sud%20et%20Est/PATRIMOINE%20TSE/GESTION%20SYNDIC/Coordonn%C3%A9es%20syndics.xlsx?d=w564c66ccb73a5b92b030b81d4233f029&csf=1&web=1&e=CpN0zS" target="_blank" rel="noopener noreferrer"><div class="card" title="Ouvrir le tableau coordonnées des syndics"> Syndics</div> </a>
+     </div>
+
+
+
+     <div>
+       <a href="https://member.moka.care/users/sign_in" title="Ouvrir la page Moka.Care">
+	<div class="card" style="background-color: white; color: black" >
+	<img src="https://member.moka.care/assets/moka-care-logo-166x40-65ba8d927c11c971dc412931bf18266c7afb45d88df85abef12a6f43768f564c.svg"
+     alt="MokaCare"
+	style="max-width:100px;">  
+	</div>
+	</a>
+	</div>
+
+
+
+
+
+
+
+
+
+</section>
+</content>
+
+
+<footer id="site-footer">
+
+</footer>
+
+
+
+<script>
+  // Crée un élément <p>
+  const p = document.createElement('p');
+
+  // Formate la date « jour mois année » en français
+  const options = { weekday : 'long', day: 'numeric', month: 'long', year: 'numeric' };
+  const today   = new Date();
+  const formattedDate = new Intl.DateTimeFormat('fr-FR', options).format(today);
+
+  // Ajoute le texte dans le paragraphe
+  p.textContent = `${formattedDate}`;
+
+  // Insère le paragraphe dans le footer
+  // Ici on suppose que le footer possède l’id « site-footer ».
+  const footer = document.getElementById('site-footer') || document.querySelector('footer');
+  if (footer) {
+    footer.appendChild(p);
+  } else {
+    // Si aucun footer n’est trouvé, on l’ajoute à la fin du body comme secours
+    document.body.appendChild(p);
+  }
+</script>
+
+
+</body>
