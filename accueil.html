@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head> 
@@ -27,7 +28,7 @@ body {
 	align-items : center ; 
 	background-color : ghostwhite; 
 	height : 90vh;
-	overflow: hidden; 
+	overflow: auto; 
 }
 
 a {
@@ -69,14 +70,16 @@ footer {
 	color : ghostwhite ; 
 	background-color : darkblue; 
 	width : 100% ; 
-	height : 45px; 
+	height : 40px; 
 	justify-content : center ;
+	align-items : center; 
 }
 
 content {
 	display : flex ; 
 	flex-direction : row ; 
 	width : 100%;
+	overflow-y: auto;
 }
 
 
@@ -92,7 +95,7 @@ content {
 	height: 100vh;
 	background: lightgrey;
 	padding: 1rem;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	overflow-y: auto;
 	}
     
@@ -100,11 +103,15 @@ content {
 	text-align : center ; 
 	color : #023F6F ;
 }
-.sidebar h2 {
+.sidebar h2 h3 {
 	margin-top: 0;
 	color : #023F6F; 
+	
 }
 
+.sidebar h3 {
+	color : green;
+}
 .sidebar ul {
 	list-style: none;
 	padding: 0;
@@ -113,6 +120,7 @@ content {
 
 .sidebar li {
 	margin: 0.5rem 0;
+	font-size : 0.9em ;
 }
 
 /*
@@ -133,15 +141,73 @@ section {
 	flex-direction : row ; 
 	align-items : center ; 
 	justify-content: center;
-	/*position: fixed; */              
+	/*position: fixed; */ 
+	padding : 15px;             
 	right: 0;
 	flex-wrap : wrap;
 	gap : 30px ; 
 	width : 70%;
 	max-width: calc(100% - 150px); /* garantit qu’on ne dépasse pas le sidebar */
+	height : 95vh; 
 	overflow-y: auto;
 }
  	
+
+/* -------------------------------------------------
+   1️⃣ Tablette (portrait) – largeur ≤ 1024 px
+   ------------------------------------------------- */
+@media (max-width: 1024px) {
+    .card {
+        flex: 0 0 30%;      /* 3 cartes par ligne */
+    }
+}
+
+/* -------------------------------------------------
+   2️⃣ Mobile – largeur ≤ 768 px
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  
+    .card {
+        min-width : 90px ;
+	width : 6vw ;
+        font-size : 0.8em ;  
+   }
+
+   .card img {
+       width : 80%;
+   }
+   
+   .sidebar {
+	position: sticky;              /* reste visible pendant le scroll */
+	flex: 0 0 15%;   
+	top: 0;
+	left: 0;
+	min-width : 100px;
+	max-width : 200px;
+	width : 10%; 
+	height: 100vh;
+	background: lightgrey;
+	padding: 1rem;
+	/* box-sizing: border-box; */
+	overflow-y: auto;
+	}
+   
+   .sidebar h2, 
+   .sidebar h3 {
+       font-size : 0.8em; 
+   }
+
+   .sidebar li {
+	margin: 0.5rem 0;
+	font-size : 0.7em ;
+   }
+
+
+}
+
+
+
+
 </style>
 
 <body>
@@ -163,6 +229,8 @@ section {
 			<li><strong> Fiona : </strong> <em> FPC </em><br> 20261812 </li>
 			<li><strong> Jérôme : </strong> <em> JCH </em><br> 20262426 </li>
 			<li><strong> Nadine : </strong> <em> NAN </em><br> 19900276 </li>
+			<li><strong> Séverine : </strong> <em> MTT </em><br> 20264568 </li>
+
   		</ul> 
 	</aside>
 
@@ -287,6 +355,41 @@ section {
 				</div>
 			</a>
 		</div>
+
+
+
+		<!-- PROTON --> 
+		<div>
+			<a href="https://account.proton.me/fr/apps" title="Ouvrir Proton">
+				<div class="card" style="background-color: white; color: black" >
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Proton_AG_logo.svg/langfr-250px-Proton_AG_logo.svg.png" alt="Proton" style="max-width:100px;">  
+				</div>
+			</a>
+		</div>
+
+
+
+		<!-- GIT HUB --> 
+		<div>
+			<a href="https://github.com/login" title="Ouvrir GitHub">
+				<div class="card" style="background-color: white; color: black" >
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png" alt="GIT-Hub" style="max-width:100px;">  
+				</div>
+			</a>
+		</div>
+
+
+
+		<!-- GIT HUB DEV--> 
+		<div>
+			<a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fauth%2Fgithub_editor%3Fredirect%3D%252Fgithub%252Fdev%26requestId%3D231b10f1-9324-4a76-9777-98030a4b96dc" title="Ouvrir GitHub DEV">
+				<div class="card" style="background-color: white; color: black" >
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png" alt="GIT-Hub Dev." style="max-width:90px;">Dev  
+				</div> 
+			</a>
+		</div>
+
+
 	</section>
 </content>
 	
@@ -306,7 +409,7 @@ section {
   p.textContent = `${formattedDate}`;
 
   // Insère le paragraphe dans le footer
-  // Ici on suppose que le footer possède l’id « site-footer ».
+  // Ici on suppose que le footer possède l’id « site-footer ».
   const footer = document.getElementById('site-footer') || document.querySelector('footer');
   if (footer) {
     footer.appendChild(p);
@@ -317,3 +420,8 @@ section {
 </script>
 
 </body>
+
+
+
+
+
