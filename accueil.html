@@ -41,7 +41,9 @@ a {
 	padding : 1% ;
 	flex-wrap : wrap ; 
 	min-width : 130px ;
-	width : 10vw ;
+        /* max-width : 150px; */
+	width : 150px ;
+	height : 100px;
 	min-height : 100px;
 	background-color : #E80249 ;
 	border : 2px solid #023F6F;
@@ -79,7 +81,7 @@ content {
 	display : flex ; 
 	flex-direction : row ; 
 	width : 100%;
-	overflow-y: auto;
+	/* overflow-y: auto; */
 }
 
 
@@ -91,7 +93,7 @@ content {
 	left: 0;
 	min-width : 150px;
 	max-width : 250px;
-	width : 10%; 
+	width : 9%; 
 	height: 100vh;
 	background: lightgrey;
 	padding: 1rem;
@@ -140,8 +142,7 @@ section {
 	flex: 1; 
 	flex-direction : row ; 
 	align-items : center ; 
-	justify-content: center;
-	/*position: fixed; */ 
+	justify-content: space-between; 
 	padding : 15px;             
 	right: 0;
 	flex-wrap : wrap;
@@ -158,8 +159,26 @@ section {
    ------------------------------------------------- */
 @media (max-width: 1024px) {
     .card {
-        flex: 0 0 30%;      /* 3 cartes par ligne */
+        height : 150px ; 
+	flex: 0 0 30%;      /* 3 cartes par ligne */
+	
     }
+
+/* Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) */
+         .sidebar::-webkit-scrollbar {
+                  width: 0;               /* largeur de la barre */
+                  background: transparent;/* évite un petit espace gris */
+}
+/* Firefox – utilise la propriété propriétaire */
+.sidebar {
+    scrollbar-width: none;  /* «none » masque la barre */
+}
+
+/* Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher */
+.sidebar {
+    -ms-overflow-style: none;   /* IE/Edge legacy */
+}
+
 }
 
 /* -------------------------------------------------
@@ -168,8 +187,9 @@ section {
 @media (max-width: 768px) {
   
     .card {
-        min-width : 90px ;
-	width : 6vw ;
+        min-width : 110px ;
+	width : 130px;
+	height : 130px;
         font-size : 0.8em ;  
    }
 
@@ -178,11 +198,11 @@ section {
    }
    
    .sidebar {
-	position: sticky;              /* reste visible pendant le scroll */
+	/*position: sticky;          */    /* reste visible pendant le scroll */
 	flex: 0 0 15%;   
 	top: 0;
 	left: 0;
-	min-width : 100px;
+	min-width : 150px;
 	max-width : 200px;
 	width : 10%; 
 	height: 100vh;
@@ -202,7 +222,20 @@ section {
 	font-size : 0.7em ;
    }
 
+/* Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) */
+         .sidebar::-webkit-scrollbar {
+                  width: 0;               /* largeur de la barre */
+                  background: transparent;/* évite un petit espace gris */
+       }
+/* Firefox – utilise la propriété propriétaire */
+.sidebar {
+    scrollbar-width: none;  /* «none » masque la barre */
+}
 
+/* Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher */
+.sidebar {
+    -ms-overflow-style: none;   /* IE/Edge legacy */
+}
 }
 
 
@@ -323,7 +356,7 @@ section {
 	
 		<!-- MOKA.CARE --> 
 		<div>
-			<a href="https://member.moka.care/users/sign_in" title="Ouvrir la page Moka.Care">
+			<a href="https://member.moka.care/users/sign_in" target="_blank" rel="noopener noreferrer" title="Ouvrir la page Moka.Care">
 				<div class="card" style="background-color: white; color: black" >
 					<img src="https://member.moka.care/assets/moka-care-logo-166x40-65ba8d927c11c971dc412931bf18266c7afb45d88df85abef12a6f43768f564c.svg" alt="MokaCare" style="max-width:100px;">  
 				</div>
@@ -332,7 +365,7 @@ section {
 	
 		<!-- EPSENS --> 
 		<div>
-			<a href="https://www.epsens.com/" title="Ouvrir la page Epsens">
+			<a href="https://www.epsens.com/" title="Ouvrir la page Epsens" target="_blank" rel="noopener noreferrer" >
 				<div class="card" style="background-color: white; color: black" >
 					<img src="https://www.epsens.com/themes/custom/epargne_salariale/img/logo.svg" alt="Epsens" style="max-width:100px;">  
 				</div>
@@ -341,7 +374,7 @@ section {
 	
 		<!-- ABEILLES --> 
 		<div>
-			<a href="https://sdh38.sharepoint.com/sites/collab/Dossiers%20collaboratifs/Forms/AllItems.aspx?id=%2Fsites%2Fcollab%2FDossiers%20collaboratifs%2FContrats%2F01%20Contrats%2F1%2E%20CONTRATS%20ENTRETIEN%20COURANT%2FDESINSECTISATION%20DERATISATION%20DESINFECTION%20%20GAINES%20RECEPT%20LOCAUX%20VO%2FContrat%5F2D%5F01%2D07%2D2024%5F30%2D06%2D2028%2FLOT%2001%20PRODHYG&viewid=69fb6774%2Db1b8%2D4501%2D88e7%2De67838792ee4&FolderCTID=0x01200038919A1790571C4EA8BCA6A5AD4B221E" title="Ouvrir la page des BPU guêpes/abeilles/frelons etc...">
+			<a href="https://sdh38.sharepoint.com/sites/collab/Dossiers%20collaboratifs/Forms/AllItems.aspx?id=%2Fsites%2Fcollab%2FDossiers%20collaboratifs%2FContrats%2F01%20Contrats%2F1%2E%20CONTRATS%20ENTRETIEN%20COURANT%2FDESINSECTISATION%20DERATISATION%20DESINFECTION%20%20GAINES%20RECEPT%20LOCAUX%20VO%2FContrat%5F2D%5F01%2D07%2D2024%5F30%2D06%2D2028%2FLOT%2001%20PRODHYG&viewid=69fb6774%2Db1b8%2D4501%2D88e7%2De67838792ee4&FolderCTID=0x01200038919A1790571C4EA8BCA6A5AD4B221E" target="_blank" rel="noopener noreferrer" title="Ouvrir la page des BPU guêpes/abeilles/frelons etc...">
 				<div class="card" style="background-color: white; color: black" alt="Sharepoint sur les abeilles">🐝  BPU Insectes
 				</div>
 			</a>
@@ -349,7 +382,7 @@ section {
 	
 		<!-- CADASTRE --> 
 		<div>
-			<a href="https://cadastre.data.gouv.fr/" title="Accéder aux références cadastrales">
+			<a href="https://cadastre.data.gouv.fr/" target="_blank" rel="noopener noreferrer" title="Accéder aux références cadastrales">
 				<div class="card" style="background-color: white; color: black" >
 					<img src="https://cadastre.data.gouv.fr/static/images/logos/cadastre.data.gouv.fr.svg" alt="Cadastre" style="max-width:100px;">  
 				</div>
@@ -360,7 +393,7 @@ section {
 
 		<!-- PROTON --> 
 		<div>
-			<a href="https://account.proton.me/fr/apps" title="Ouvrir Proton">
+			<a href="https://account.proton.me/fr/apps" target="_blank" rel="noopener noreferrer" title="Ouvrir Proton">
 				<div class="card" style="background-color: white; color: black" >
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Proton_AG_logo.svg/langfr-250px-Proton_AG_logo.svg.png" alt="Proton" style="max-width:100px;">  
 				</div>
@@ -371,7 +404,7 @@ section {
 
 		<!-- GIT HUB --> 
 		<div>
-			<a href="https://github.com/login" title="Ouvrir GitHub">
+			<a href="https://github.com/login" title="Ouvrir GitHub" target="_blank" rel="noopener noreferrer">
 				<div class="card" style="background-color: white; color: black" >
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png" alt="GIT-Hub" style="max-width:100px;">  
 				</div>
@@ -382,12 +415,25 @@ section {
 
 		<!-- GIT HUB DEV--> 
 		<div>
-			<a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fauth%2Fgithub_editor%3Fredirect%3D%252Fgithub%252Fdev%26requestId%3D231b10f1-9324-4a76-9777-98030a4b96dc" title="Ouvrir GitHub DEV">
+			<a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fauth%2Fgithub_editor%3Fredirect%3D%252Fgithub%252Fdev%26requestId%3D231b10f1-9324-4a76-9777-98030a4b96dc" title="Ouvrir GitHub DEV" target="_blank" rel="noopener noreferrer">
 				<div class="card" style="background-color: white; color: black" >
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png" alt="GIT-Hub Dev." style="max-width:90px;">Dev  
 				</div> 
 			</a>
 		</div>
+
+
+
+		<!-- HOTMAIL--> 
+		<div>
+			<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3A%2F%2Foutlook.office.com%2F.default%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Foutlook.live.com%2Fmail%2F&client-request-id=3ce5e1bb-b1ed-cb11-c162-7fed2690da3d&response_mode=fragment&client_info=1&prompt=select_account&nonce=01993dd1-189d-70fd-88da-917ae0c7d07d&state=eyJpZCI6IjAxOTkzZGQxLTE4OWMtNzU2MS1iN2FjLWM1NzhhNDYzMGE0NyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D&claims=%7B%22access_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=msal.js.browser&x-client-VER=4.14.0&response_type=code&code_challenge=01E7jorOYCx67soSQBR27kRPryKLrMpgQDZrTjeNAtE&code_challenge_method=S256&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c&fl=dob,flname,wld" title="Ouvrir Outlook" target="_blank" rel="noopener noreferrer">
+				<div class="card" style="background-color: white; color: black" >
+					<img src="https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg" alt="Outlook" style="max-width:90px;">  
+				</div> 
+			</a>
+		</div>
+
+
 
 
 	</section>
