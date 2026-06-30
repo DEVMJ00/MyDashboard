@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cheatsheet HTML / CSS / JS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size : 0.8em;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .html {
+      background : #FFFE91 ;
+    }
+    
+    .css {
+      background : #75FA8D ;
+    }
+    
+    .javascript {
+      background : #EA3680 ;
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background: #f0f0f0;
+      text-align: left;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card ">
+    <h2>HTML</h2>
+    <pre style="color : darkgreen ;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+  &lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt; &lt;/title&gt;
+&lt;meta name="description" content="Description courte du site ou de la page."&gt;
+&lt;meta name="author" content="Votre Nom"&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+&lt;script src="script.js" defer&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;header&gt;
+    &lt;nav&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;section&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;address&gt;
+    &lt;/address&gt;
+  &lt;/footer&gt;
+  &lt;/body&gt;
+    </pre>	
+    <table>
+  <tr><th>Balise</th><th>Description</th></tr>
+  <tr><td><code>amp</code> </td><td> Permet d'échapper l'entité <code>&</code>. Pour faire appraitre en clair : <code>&amplt;</code>, il faut écrire <strong><code>&amp;amp;lt;</code></strong> </td></tr>
+  <tr><td> <code>&amp;lt;</code> </td><td> < </td></tr>
+  <tr><td> <code>&amp;gt;</code> </td><td> > </td></tr>
+  <tr><td><code>&lt;em&gt; &lt;/em&gt;</code></td><td>Met le texte en emphase (italique).</td></tr>
+  <tr><td><code>&lt;strong&gt; &lt;/strong&gt;</code></td><td>Met le texte en gras avec importance sémantique.</td></tr>
+  <tr><td><code>&lt;code&gt; &lt;/code&gt;</code></td><td>Affiche du code avec police monospace.</td></tr>
+  <tr><td><code>&lt;pre&gt; &lt;/pre&gt;</code></td><td>Conserve le formatage du texte (retours à la ligne, espaces).</td></tr>
+  <tr><td><code>&lt;a href=""&gt;</code></td><td>Lien hypertexte. Ajoute <code>target="_blank"</code> pour ouvrir dans un nouvel onglet.</td></tr>
+  <tr><td><code>&lt;img src="" alt=""&gt;</code></td><td>Insère une image. <code>loading="lazy"</code> pour différer le chargement.</td></tr>
+  <tr><td><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></td><td>Listes non ordonnées, ordonnées et leurs éléments.</td></tr>
+  <tr><td><code>&lt;blockquote&gt;</code></td><td>Citation longue.</td></tr>
+  <tr><td><code>&lt;hr&gt;</code></td><td>Trait horizontal (séparateur visuel).</td></tr>
+  <tr><td><code>&lt;br&gt;</code></td><td>Retour à la ligne.</td></tr>
+</table>
+  </div>
+  
+  <div class="card ">
+  <h2>HTML – Tableaux</h2>
+  <p>
+	<pre style="color : darkgreen ;">
+&lt;table&gt;
+  &lt;caption&gt; Nom du Tableau &lt;/caption&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;	
+    &lt;th&gt; colonne 1 &lt;/th&gt;
+    &lt;th&gt; colonne 2 &lt;/th&gt;
+    &lt;th&gt; colonne 3 &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt; item 1 &lt;/td&gt;
+    &lt;td&gt; item 2 &lt;/td&gt;
+    &lt;td&gt; item 3 &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt; item 4 &lt;/td&gt;
+    &lt;td&gt; item 5 &lt;/td&gt;
+    &lt;td&gt; item 6 &lt;/td&gt;
+   &lt;/tr&gt;	
+  &lt;/tbody&gt;  
+  
+  &lt;tfoot&gt;
+  &lt;tr&gt;
+    &lt;td&gt; footer 7 &lt;/td&gt;
+    &lt;td&gt; footer 8 &lt;/td&gt;
+    &lt;td&gt; footer 9 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;		
+	</pre>
+  </p>
+  
+  <table>
+  <caption> Nom du Tableau </caption>
+	<thead>
+	  <tr>
+		<th> colonne  1 </th>
+		<th> colonne  2 </th>
+		<th> colonne  3 </th>
+	  </tr>
+	</thead>
+	
+	<tbody>
+	<tr>
+		<td> item 1 </td> 
+		<td> item 2 </td> 
+		<td> item 3 </td> 
+	</tr>
+	
+	<tr>
+		<td> item 4 </td> 
+		<td> item 5 </td> 
+		<td> item 6 </td> 
+	</tr>
+	</tbody>
+	
+	<tfoot>
+	<tr>
+		<td> footer 7 </td> 
+		<td> footer 8 </td> 
+		<td> footer 9 </td> 
+	</tr>
+	</tfoot>
+	
+	</table>
+  </div>
+
+<div class="card ">
+  <h2>HTML – Formulaires</h2>
+ <table>
+  <tr>
+	<th>Balise</th>
+	<th>Attributs</th>
+	<th>Description</th>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;form&gt;</code>
+	</td>
+	<td></td>
+	<td>Conteneur d’un formulaire (action, method).</td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;input type="text"&gt;</code>
+	</td>
+	<td> 
+		<code>readonly</code> 
+		<code>value="valeur par défaut"</code>
+		<code>autofocus</code>
+		<code>disabled</code>
+		<code>minlength</code>
+		<code>maxlength</code>
+		<code>autocomplete="on"</code>
+		<code>autocomplete="off"</code>
+	</td>
+	<td>Champ de texte simple. Ex. : <input type="text" value="valeur par défaut">
+	</td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;input type="password" &gt; </code>
+	</td>
+	<td><code> required </code></td>
+	<td>Champ masqué pour les mots de passe. Ex. : <input type="password"> </td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;input type="email"&gt;</code>
+	</td>
+	<td></td>
+	<td>Champ de saisie d’adresse e‑mail (validation native). Ex. : <input type="email">
+	</td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;input type="tel"&gt;</code>
+	</td>
+	<td></td>
+	<td>Champ de saisie de numéro de téléphone. Ex. : <input type="tel" inputmode="tel"   placeholder="+33 6 12 34 56 78" pattern="^\+?\d{0,3}[\s.-]?\(?\d{1,4}\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}$">
+	</td>
+  </tr>
+ 
+  <tr>
+	<td>
+		<code> pattern="^\+?\d{0,3}[\s.-]?\(?\d{1,4}\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}$"</code>
+	</td>
+	<td></td>
+	<td>Pattern de n° de tel.</td>
+  </tr>
+
+  <tr>
+	<td>
+		<code>&lt;img src= "chemin/vers/image.jpg" &gt;</code>
+	</td>
+	<td><code>alt="Texte de remplacement"</code></td>
+	<td>Insérer une image. Ex. : <img src="chemin/vers/image.jpg" alt="pas d'image disponible">
+  </tr>  
+  
+  <tr>
+	<td>
+		<code>&lt;input type="checkbox"&gt;</code>
+	</td>
+	<td></td>
+	<td>Case à cocher. Ex. : <input type="checkbox"></td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;input type="radio"&gt;</code>
+	</td>
+	<td></td>
+	<td>Bouton radio (groupé via le même <code>name</code>) Ex. : <input type="radio">.
+	</td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;select id="..." name="..." &gt; … &lt;option value="..." &gt;…&lt;/select&gt;</code>
+	</td>
+	<td></td>
+	<td>Menu déroulant. Ex. <label for="pays">Pays :</label>
+	
+<select id="pays" name="pays">
+    <option value="" disabled selected>— Sélectionnez —</option>
+    <option value="fr">France</option>
+    <option value="be">Belgique</option>
+    <option value="ch">Suisse</option>
+    <option value="ca">Canada</option>
+    <option value="us">États‑Unis</option>
+</select>
+
+</td></tr>
+  <tr>
+	<td>
+		<code>&lt;textarea&gt;</code>
+	</td>
+	<td>
+		<code>rows="6"</code>
+		<code>cols="40"</code>
+		<code>placeholder="Votre commentaire…"</code>
+		<code>required</code>
+		<code>readonly</code>
+		<code>disabled</code>
+		<code>minlength="10"</code>
+		<code>maxlength="500"</code>
+		<code>wrap="hard"</code> (soft par défaut)
+		<code>spellcheck="true"</code>  ou <code>spellcheck="false"</code>  
+		<code>autofocus</code>
+		<code>lang="fr"</code>
+		<code>title="Saisissez votre message ici"</code>
+		
+	</td>
+	<td>Zone de texte multi‑lignes. Ex. <textarea> </textarea> 
+	</td>
+	</tr>
+  
+  <tr>
+	<td>
+		<code>&lt;button type="submit"&gt;</code>
+	</td>
+	<td></td>
+	<td>Bouton d’envoi (ou <code>type="reset"</code>).</td>
+  </tr>
+  
+  <tr>
+	<td>
+		<code>&lt;label for="id"&gt;</code>
+	</td>
+	<td></td>
+	<td>Étiquette liée à un champ (améliore l’accessibilité).</td>
+	</tr>
+</table>
+</div>
+
+
+  <div class="card ">
+    <h2>CSS</h2>
+    <table>
+  <tr><th>Propriété</th><th>Attributs</th><th>Description</th></tr>
+<tr><td><code>color</code></td><td> <code>rgba(255,0,0,0.5)</code></td><td> Valeurs décimales <code>(0‑255)</code> ou en pourcentage + canal alpha (0 = transparent, 1 = opaque). </td></tr>  
+<tr><td><code>--couleurprimaire</code></td><td><code>color: var(--couleurprimaire);</code></td><td>Déclarer et utiliser une variable de couleur.</td></tr>
+  <tr><td><code>@media (max-width: 1024px) {...}</code></td><td></td><td> Définit le comportement pour un affichage < à 1024px</td></tr>
+  <tr><td><code>background-color</code></td><td></td><td>Couleur de fond d’un élément.</td></tr>
+  <tr><td><code>margin</code></td><td><code>top</code>,<code>right</code>, <code>bottom</code>, <code>left</code></td><td>Marge extérieure</td></tr>
+  <tr><td><code>padding</code></td><td><code>top</code>,<code>right</code>, <code>bottom</code>, <code>left</code></td><td>Marge intérieure</td></tr>
+  <tr><td><code>border</code></td><td></td><td>Définit la bordure (épaisseur, style, couleur).</td></tr>
+  <tr><td><code>font-size</code></td><td></td><td>Taille de la police.</td></tr>
+  <tr><td><code>font-family</code></td><td></td><td>Famille de police.</td></tr>
+  <tr><td><code>text-decoration</code></td><td> <code>none</code>, <code>overline</code>, <code>line-through</code>, <code>underline</code></td></td><td></tr>
+  <tr><td><code>display</code></td><td>Mode d’affichage : <code>block</code>, <code>inline</code>, <code>flex</code>, <code>grid</code>, etc.</td></td><td></tr>
+  <tr><td><code>position</code></td><td>Positionnement (<code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code>).</td><td></td></tr>
+  <tr><td><code>overflow</code>, <code>overflow-x</code>, <code>overflow-y</code></td><td><code>visible</code>, <code>hidden</code>, <code>scroll</code>, <code>auto</code></td><td>Gestion du débordement</td></tr>
+  
+  <tr>
+	<td>
+		<code>:hover</code>
+	</td>
+	<td>
+		<code>cursor : pointer; </code>,  
+		<code>transform : scale(1.2) ; </code>,  
+		<code>transition : transform 90ms ;</code> 
+	</td>
+	<td></td>
+  </tr>
+
+  </table>
+  </div>
+
+<div class="card ">
+  <h2>CSS – Flexbox</h2>
+  <table>
+  <tr><th>Propriété</th><th>Valeurs courantes</th><th>Description</th></tr>
+  <tr><td><code>display</code></td><td><code>flex</code> / <code>inline-flex</code></td><td>Active Flexbox sur le conteneur.</td></tr>
+  <tr><td><code>flex-direction</code></td><td><code>row</code>, <code>column</code>, <code>row-reverse</code>, <code>column-reverse</code></td><td>Direction principale des items.</td></tr>
+  <tr><td><code>justify-content</code></td><td><code>flex-start</code>, <code>center</code>, <code>flex-end</code>, <code>space-between</code>, <code>space-around</code>, <code>space-evenly</code></td><td>Alignement horizontal (axe principal).</td></tr>
+  <tr><td><code>align-items</code></td><td><code>flex-start</code>, <code>center</code>, <code>flex-end</code>, <code>stretch</code></td><td>Alignement vertical (axe transversal).</td></tr>
+  <tr><td><code>flex-wrap</code></td><td><code>nowrap</code>, <code>wrap</code>, <code>wrap-reverse</code></td><td>Gestion du retour à la ligne.</td></tr>
+  <tr><td><code>gap</code></td><td>ex. <code>10px</code>, <code>1rem</code></td><td>Espace entre les items.</td></tr>
+  <tr><td><code>order</code></td><td>nombre entier</td><td>Change l’ordre d’affichage d’un item.</td></tr>
+  <tr><td><code>flex</code></td><td>ex. <code>1 1 auto</code></td><td>Raccourci pour <code>flex-grow</code>, <code>flex-shrink</code> et <code>flex-basis</code>.</td></tr>
+</table>
+</div>
+
+<div class="card ">
+  <h2>CSS – Grid</h2>
+  <table>
+  <tr><th>Propriété</th><th>Valeurs typiques</th><th>Description</th></tr>
+  <tr><td><code>display</code></td><td><code>grid</code> / <code>inline-grid</code></td><td>Active Grid sur le conteneur.</td></tr>
+  <tr><td><code>grid-template-columns</code></td><td><code>200px 1fr 2fr</code> ou <code>repeat(3, 1fr)</code></td><td>Définit la largeur des colonnes.</td></tr>
+  <tr><td><code>grid-template-rows</code></td><td><code>100px auto</code> ou <code>repeat(2, minmax(50px, auto))</code></td><td>Définit la hauteur des lignes.</td></tr>
+  <tr><td><code>grid-gap</code> (ou <code>gap</code>)</td><td><code>20px</code></td><td>Espace entre lignes et colonnes.</td></tr>
+  <tr><td><code>justify-items</code></td><td><code>start</code>, <code>center</code>, <code>end</code>, <code>stretch</code></td><td>Alignement horizontal des cellules.</td></tr>
+  <tr><td><code>align-items</code></td><td><code>start</code>, <code>center</code>, <code>end</code>, <code>stretch</code></td><td>Alignement vertical des cellules.</td></tr>
+  <tr><td><code>grid-area</code></td><td><code>1 / 2 / 3 / 4</code></td><td>Positionnement d’un item (ligne‑début / colonne‑début / ligne‑fin / colonne‑fin).</td></tr>
+  <tr><td><code>grid-column / grid-row</code></td><td><code>span 2</code> ou <code>2 / 4</code></td><td>Définit la taille ou la position d’un item.</td></tr>
+</table>
+</div>
+
+  <div class="card ">
+    <h2>JavaScript</h2>
+   <table>
+  <tr><th>Commande</th><th>Description</th></tr>
+  <tr><td><code>console.log()</code></td><td>Affiche un message dans la console du navigateur.</td></tr>
+  <tr><td><code>document.getElementById()</code></td><td>Retourne l’élément dont l’attribut <code>id</code> correspond.</td></tr>
+  <tr><td><code>document.querySelector()</code></td><td>Sélectionne le premier élément correspondant à un sélecteur CSS.</td></tr>
+  <tr><td><code>document.querySelectorAll()</code></td><td>Retourne une NodeList de tous les éléments correspondant au sélecteur.</td></tr>
+  <tr><td><code>alert()</code></td><td>Affiche une boîte de dialogue modale avec un message.</td></tr>
+  <tr><td><code>let / const / var</code></td><td>Déclaration de variables (préférez <code>let</code> ou <code>const</code>).</td></tr>
+  <tr><td><code>function()</code></td><td>Déclare une fonction (ou syntaxe fléchée <code>() => {}</code>).</td></tr>
+  <tr><td><code>addEventListener()</code></td><td>Attache un écouteur d’événement à un élément.</td></tr>
+  <tr><td><code>fetch()</code></td><td>Effectue une requête HTTP (promesse).</td></tr>
+  <tr><td><code>JSON.parse() / JSON.stringify()</code></td><td>Conversion entre objets JavaScript et chaînes JSON.</td></tr>
+</table>
+  </div>
+
+
+</body>
+</html>
