@@ -35,10 +35,15 @@ aside.dark {
 
 body.dark .card {
     border: 2px solid ghostwhite;
-    background-color: #001a33;
-	color : ghostwhite;
+    /* background-color: #001a33; */
+	/* color : ghostwhite; */
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4),
+            0 0 30px rgba(255, 255, 255, 0.2);
 }
 
+body.dark .card-label {
+	color : white; 
+}
 	
 header {
   min-height : 60px;
@@ -92,10 +97,9 @@ button {
 
 .card {
 	display : flex ; 
-	padding : 1% ;
+	/*padding : 0% ;*/
 	flex-wrap : wrap ; 
 	min-width : 130px ;
-	/* max-width : 150px; */
 	width : 150px ;
 	height : 100px;
 	min-height : 100px;
@@ -124,6 +128,16 @@ iframe {
 	transition : transform 99ms ;
 }
 
+.card-label {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
 footer {
 	display : flex ;
 	position : fixed ;
@@ -146,8 +160,10 @@ content {
 
 img {
   border-radius : 10px;
-  padding : 2px;
+  padding : 4px;
+  width: auto;
   max-width : 100%;
+  height : auto;
   max-height : 100%;
 }
 
