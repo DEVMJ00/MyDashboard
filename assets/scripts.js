@@ -44,4 +44,14 @@ btn.addEventListener("click", () => {
 	document.body.classList.toggle("dark");
 
 	});
-	
+
+
+//menu burger //
+const button = document.querySelector(".menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+
+button.addEventListener("click", () => {
+
+    sidebar.classList.toggle("open");
+
+});
