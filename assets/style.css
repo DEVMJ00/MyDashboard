@@ -338,23 +338,21 @@ input:checked + .slider:before {
    ------------------------------------------------- */
 @media (max-width: 768px) {
   
-    .card {
-        min-width : 110px ;
-	width : 130px;
-	height : 130px;
-        font-size : 0.8em ;  
+.card {
+	  width : 90px;
+	  height : auto;
+      font-size : 0.8em ;  
    }
 
-   .card img {
-       width : 80%;
+.card img {
+       width : 60%;
    }
    
    .sidebar {
-	
 	flex: 0 0 12%;   
 	top: 0;
 	left: 0;
-	min-width : 25%;
+	min-width : 15%;
 	max-width : 200px;
 	background: lightgrey;
 	padding: 1rem;
