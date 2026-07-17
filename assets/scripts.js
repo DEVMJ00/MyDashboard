@@ -1,3 +1,7 @@
+//----------------------------
+//          HORLOGE
+//----------------------------
+
 // Crée un élément <p>
 const p = document.createElement('p');
 
@@ -32,9 +36,12 @@ if (footer) {
 
 
 
-
+//----------------------------
+//          DARK THEME
+//----------------------------
 const btn = document.getElementById("themeBtn");
 btn.addEventListener("click", () => {
 	document.body.classList.toggle("dark");
 
 	});
+	
