@@ -335,7 +335,7 @@ input:checked + .slider:before {
 
 /* -------------------------------------------------
    2️⃣ Mobile – largeur ≤ 768 px
-   ------------------------------------------------- */
+   ------------------------------------------------- 
 @media (max-width: 768px) {
   
 .card {
@@ -369,19 +369,111 @@ input:checked + .slider:before {
 	font-size : 0.7em ;
    }
 
-/* Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) */
+Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) 
          .sidebar::-webkit-scrollbar {
-                  width: 0;               /* largeur de la barre */
-                  background: transparent;/* évite un petit espace gris */
+                  width: 0;               /* largeur de la barre 
+                  background: transparent; évite un petit espace gris 
        }
-/* Firefox – utilise la propriété propriétaire */
+/* Firefox – utilise la propriété propriétaire 
 .sidebar {
-    scrollbar-width: none;  /* «none » masque la barre */
+    scrollbar-width: none;  /* «none » masque la barre 
 }
 
-/* Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher */
-.sidebar {
-    -ms-overflow-style: none;   /* IE/Edge legacy */
+ Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher 
+sidebar {
+    -ms-overflow-style: none;   IE/Edge legacy 
 }
 }
 
+*/
+
+@media(max-width:768px) {
+
+
+    /*
+      La sidebar devient un panneau flottant.
+
+      position:fixed :
+      elle sort du flux normal.
+
+      z-index :
+      elle passe au-dessus des cards.
+    */
+    .sidebar {
+
+        position:fixed;
+
+        top:0;
+        left:0;
+
+        height:100vh;
+
+        width:260px;
+
+        transform:translateX(-100%);
+
+
+        /*
+          Transition :
+          permet une animation douce
+          quand on ouvre/ferme.
+        */
+        transition:transform .3s ease;
+
+
+        z-index:1000;
+    }
+
+
+    /*
+      Classe ajoutée en JavaScript
+      quand on clique sur ☰
+    */
+    .sidebar.open {
+
+        transform:translateX(0);
+    }
+
+
+
+    .menu-toggle {
+
+        display:block;
+
+        position:fixed;
+
+        top:10px;
+        left:10px;
+
+        z-index:1100;
+    }
+
+
+
+    .content {
+
+        width:100%;
+        padding:0.5rem;
+    }
+
+
+
+    .cards {
+
+        /*
+          Sur mobile :
+          on force au moins 2 colonnes
+
+          fini le scroll interminable
+        */
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .card {
+
+        font-size:.8rem;
+    }
+
+}
