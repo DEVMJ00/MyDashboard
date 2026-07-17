@@ -396,6 +396,7 @@ sidebar {
 .menu-toggle {
     display:none;
 }
+
 @media(max-width:768px) {
 
 
@@ -439,36 +440,23 @@ sidebar {
       quand on clique sur ☰
     */
     .sidebar.open {
-
         transform:translateX(0);
     }
 
-
-
     .menu-toggle {
-
         display:block;
-
         position:fixed;
-
-        top:10px;
+        top:30px;
         left:10px;
-
         z-index:1100;
     }
 
-
-
     .content {
-
         width:100%;
         padding:0.5rem;
     }
 
-
-
-    .cards {
-
+    .card {
         /*
           Sur mobile :
           on force au moins 2 colonnes
@@ -476,13 +464,7 @@ sidebar {
           fini le scroll interminable
         */
         grid-template-columns:
-            repeat(2,1fr);
-    }
-
-
-    .card {
-
+            repeat(3,1fr);
         font-size:.8rem;
     }
-
 }
