@@ -9,11 +9,27 @@
     padding: 0;
 }
 
+
 :root {
 	--primary-color : #141D38; 
 	--secondary-color : #FCDB32;
 	--header-height : 5vh;
 	--footer-height: 7vh;
+}
+
+
+a {
+	text-decoration : none ; 
+	color : ghostwhite ; 
+}
+
+
+button {
+	padding : 0px; 
+	border : none;
+	border-radius : 6px;
+	cursor : pointer;
+	font-size : 20px;
 }
 
 
@@ -27,19 +43,21 @@ body {
 
 }
 
+
 body.dark {
 	background-color : var(--primary-color);
 	color : white;
 }
-	
+
 body.dark button {
-	background-color : #F28CBA;
+	background-color : lightgrey;
 }
 
 body.dark aside,
 aside.dark {
     background-color: var(--primary-color);
 }
+
 
 body.dark .card {
     border: 2px solid ghostwhite;
@@ -49,9 +67,11 @@ body.dark .card {
             0 0 30px rgba(255, 255, 255, 0.2);
 }
 
+
 body.dark .card-label {
 	color : var(--secondary-color); 
 }
+	
 	
 header {
   min-height: var(--header-height);
@@ -64,34 +84,20 @@ header {
   align-items : center;
 }
 
+
 header > h1 {
 	padding : 3px;
 	text-align: center; 
 }
 
 
-a {
-	text-decoration : none ; 
-	color : ghostwhite ; 
-}
-
-button {
-	padding : 10px; 
-	border : none;
-	/* background : #7ab3eb; */
-	/* color : white; */
-	border-radius : 8px;
-	cursor : pointer;
-	font-size : 20px;
-}
-
 .label-color {
-	margin : 5px;
+	margin : 3px;
 	color : white; 
 	border-radius : 8px ; 
 	max-width : 90%; 
 	min-height : 30px;
-	padding : 1%; 
+	padding : 1%;  
 	text-align : center;
 	display : flex ;
 	flex-direction : column;
@@ -100,9 +106,9 @@ button {
 	font-weight : bold;
 }
 
+
 .card {
 	display : flex ; 
-	/*padding : 0% ;*/
 	flex-wrap : wrap ; 
 	min-width : 130px ;
 	width : 150px ;
@@ -116,39 +122,35 @@ button {
 	justify-content : center ; 
 	align-items : center ; 
 	text-align : center ; 
-	margin-bottom : 15px ;
+	margin-bottom : 10px ;
 	font-weight : bold ; 
 	font-size : 1.2em;
 	transition: all 0.2s ease;
 }
 
-/*
-iframe {
-	width : 100%;
-}
-*/
 
 .card:hover {
     cursor: pointer;
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
+
  .card:active { 
      transform: translateY(8px); 
      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
  }
 
 
-
 .card-label {
     display: block;
-    margin-top: 3px;
     font-size: 12px;
     color: #555;
     text-align: center;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
+
 
 footer {
 	display : flex ;
@@ -164,13 +166,6 @@ footer {
 	align-items : center; 
 }
 
-main {
-	display : flex ; 
-	flex-direction : row ; 
-	width : 100%;
-    min-height: calc(100vh - var(--header-height));
-	overflow-y: auto; 
-	}
 
 img {
   border-radius : 10px;
@@ -181,34 +176,65 @@ img {
   max-height : 100%;
 }
 
+
+main {
+	display : flex ; 
+	flex-direction : row ; 
+	width : 100%;
+    min-height: calc(100vh - var(--header-height));
+	overflow-y: auto; 
+	justify-content : center; 
+	}
+
+
+section 
+{
+	display : flex ; 
+	flex: 1; 
+	flex-wrap : wrap;
+	flex-direction : row ; 
+	align-items : center ; 
+	align-content : space-evenly ;
+	justify-content: space-evenly ; 
+	padding : 15px;             
+	right: 0;
+	gap : 20px ; 
+	max-width: calc(100% - 10%); /* garantit qu’on ne dépasse pas le sidebar */
+}
+
  /* ---------- Sidebar (menu) ---------- */
 .sidebar {
-	position: sticky;  /* reste visible pendant le scroll */
+	position: sticky;  
 	flex: 0 0 12%;   
 	top: 0;
 	left: 0;
 	min-width : 10%;
-	background: lightgrey;
+	background: var(--primary-color);
 	padding: 1rem;
-	/* box-sizing: border-box; */
 	overflow-y: auto;
 	min-height: calc(100vh - var(--footer-height));
 	padding-bottom: calc(var(--footer-height) + 20px);  /* ← Marge supplémentaire */
-  
 	}
     
-.sidebar h1 {
-	text-align : center ; 
-	color : #023F6F ;
-}
-.sidebar h2 {
-	margin-top: 0;
-	color : #023F6F; 
-}
+.sidebar summary, 
+.sidebar p, 
+.sidebar li,
+.sidebar  ul {
+	color : var(--secondary-color) ; 
+}	
+	
+/* .sidebar h1 { */
+	/* text-align : center ;  */
+/* } */
 
-.sidebar h3 {
-	color : green;
-}
+/* .sidebar h2 { */
+	/* margin-top: 0; */
+	/* color : #023F6F;  */
+/* } */
+
+/* .sidebar h3 { */
+	/* color : green; */
+/* } */
 .sidebar ul {
 	list-style: none;
 	padding: 0;
@@ -219,25 +245,6 @@ img {
 	margin: 0.5rem 0;
 	font-size : 0.9em ;
 }
-
-
-section 
-{
-	display : flex ; 
-	flex: 1; 
-	flex-direction : row ; 
-	align-items : center ; 
-	align-content : space-evenly ;
-	justify-content: space-evenly ; 
-	padding : 15px;             
-	right: 0;
-	flex-wrap : wrap;
-	gap : 30px ; 
-	max-width: calc(100% - 10%); /* garantit qu’on ne dépasse pas le sidebar */
-	/* height : auto;  */
-	/* overflow-y: auto; */
-}
- 	
 
 .switch {
 	position : relative ; 
@@ -259,7 +266,6 @@ section
 	left : 0;
 	right : 0;
 	bottom : 0;
-	/* background-color : #ccc; */
 	background-color : var(--secondary-color);
 	-webkit-transition : .4s;
 	transition : .4s;
@@ -278,11 +284,9 @@ section
 }
 
 input:checked + .slider {
-	/* background-color: #2196F3; */
 	background-color: var(--primary-color);
 	outline: 2px solid var(--secondary-color);
     outline-offset: 2px; /* espace entre le slider et la bordure */;
-	/* border : solid 1px var(--secondary-color); */
 }
 
 input:focus + .slider {
@@ -303,92 +307,6 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-
-
-/* -------------------------------------------------
-   1️⃣ Tablette (portrait) – largeur ≤ 1024 px
-   ------------------------------------------------- */
-@media (max-width: 1024px) {
-    .card {
-        height : 150px ; 
-	flex: 0 0 30%;      /* 3 cartes par ligne */
-	
-	
-    }
-
-/* Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) */
-         .sidebar::-webkit-scrollbar {
-                  width: 0;               /* largeur de la barre */
-                  background: transparent;/* évite un petit espace gris */
-}
-/* Firefox – utilise la propriété propriétaire */
-.sidebar {
-    scrollbar-width: none;  /* «none » masque la barre */
-}
-
-/* Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher */
-.sidebar {
-    -ms-overflow-style: none;   /* IE/Edge legacy */
-}
-
-}
-
-/* -------------------------------------------------
-   2️⃣ Mobile – largeur ≤ 768 px
-   ------------------------------------------------- 
-@media (max-width: 768px) {
-  
-.card {
-	  width : 90px;
-	  height : auto;
-      font-size : 0.8em ;  
-   }
-
-.card img {
-       width : 60%;
-   }
-   
-   .sidebar {
-	flex: 0 0 12%;   
-	top: 0;
-	left: 0;
-	min-width : 15%;
-	max-width : 200px;
-	background: lightgrey;
-	padding: 1rem;
-	overflow-y: auto;
-	}
-   
-   .sidebar h2
-   {
-       font-size : 0.8em; 
-   }
-
-   .sidebar li {
-	margin: 0.5rem 0;
-	font-size : 0.7em ;
-   }
-
-Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) 
-         .sidebar::-webkit-scrollbar {
-                  width: 0;               /* largeur de la barre 
-                  background: transparent; évite un petit espace gris 
-       }
-/* Firefox – utilise la propriété propriétaire 
-.sidebar {
-    scrollbar-width: none;  /* «none » masque la barre 
-}
-
- Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher 
-sidebar {
-    -ms-overflow-style: none;   IE/Edge legacy 
-}
-}
-
-*/
-
-
-
 /* =====================================================
    BOUTON MENU MOBILE
    ===================================================== */
@@ -397,43 +315,46 @@ sidebar {
     display:none;
 }
 
-@media(max-width:768px) {
 
-
-    /*
-      La sidebar devient un panneau flottant.
-
-      position:fixed :
-      elle sort du flux normal.
-
-      z-index :
-      elle passe au-dessus des cards.
-    */
-    .sidebar {
-
-        position:fixed;
-
-        top:0;
-        left:0;
-
-        height:100vh;
-
-        width:260px;
-
-        transform:translateX(-100%);
-
-
-        /*
-          Transition :
-          permet une animation douce
-          quand on ouvre/ferme.
-        */
-        transition:transform .3s ease;
-
-
-        z-index:1000;
+/* -------------------------------------------------
+   1️⃣ Tablette (portrait) – largeur ≤ 1024 px
+   ------------------------------------------------- */
+@media (max-width: 1024px) {
+    .card {
+		width : 150px ;
+		height : 100px;
+		flex: 0 0 30%;      /* 3 cartes par ligne */
     }
 
+	/* Masque la barre sur les navigateurs WebKit (Chrome, Edge, Safari) */
+	 .sidebar::-webkit-scrollbar {
+		width: 0;  /* largeur de la barre */
+        background: transparent;/* évite un petit espace gris */
+	}
+	
+	/* Firefox – utilise la propriété propriétaire */
+	.sidebar {
+		scrollbar-width: none;  /* «none » masque la barre */
+	}
+
+	/* Optionnel : garder la possibilité de faire défiler avec la molette ou le toucher */
+	.sidebar {
+		-ms-overflow-style: none;   /* IE/Edge legacy */
+	}
+}
+
+
+@media(max-width:768px) {
+    .sidebar {
+        position:fixed;
+        top:0;
+        left:0;
+        height:100vh;
+        width:260px;
+        transform:translateX(-100%);
+        transition:transform .3s ease;
+        z-index:1000;
+    }
 
     /*
       Classe ajoutée en JavaScript
@@ -446,25 +367,17 @@ sidebar {
     .menu-toggle {
         display:block;
         position:fixed;
-        top:30px;
-        left:10px;
+		width : 35px;
+		height : 35px;
+        top:70px;
+        right:10px;
         z-index:1100;
+		background-color : var(--secondary-color);
+		color : var(--primary-color);
     }
-
-    .content {
-        width:100%;
-        padding:0.5rem;
-    }
-
-    .card {
-        /*
-          Sur mobile :
-          on force au moins 2 colonnes
-
-          fini le scroll interminable
-        */
-        grid-template-columns:
-            repeat(3,1fr);
-        font-size:.8rem;
-    }
+	
+	section {
+		min-width: 0; 
+		gap : 10px ; 
+	}
 }
