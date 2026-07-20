@@ -219,11 +219,14 @@ section {
 	padding-bottom: calc(var(--footer-height) + 20px);  /* ← Marge supplémentaire */
 	}
     
-.sidebar summary, 
+.sidebar summary {
+	color : var(--secondary-color) ; 
+}
+	
 .sidebar p, 
 .sidebar li,
 .sidebar  ul {
-	color : var(--secondary-color) ; 
+	color : white ; 
 }	
 	
 /* .sidebar h1 { */
