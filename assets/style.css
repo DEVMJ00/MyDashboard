@@ -365,7 +365,7 @@ input:checked + .slider:before {
         display:block;
         position:fixed;
 		background-color: var(--secondary-color);
-		color : var(--primary-color);
+		color: var(--primary-color);
 		border: solid 2px var(--primary-color);
 		border-radius: 15px;
 		/* font-weight: bold; */
@@ -374,10 +374,12 @@ input:checked + .slider:before {
 		cursor: pointer;
 		/* opacity: 0; */
 		box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
-        top:70px;
+	  	bottom: 90px;
+    	right: 30px;
+        /*top:70px;*/
+		 /*right:10px;*/
 		width : 40px;
 		height : 40px;
-        right:10px;
         z-index:9900;
     }
     
