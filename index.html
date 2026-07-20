@@ -41,18 +41,159 @@
           <li><strong> Nadine : </strong> <em> NAN </em><br> 19900276 </li>
           <li><strong> François : </strong> <br> 20009144 </li>
       </details>
-        
+
+		<!--
       <details>
         <summary>Raccourcis</summary>
          <ul>
-          <li>signature : alt + JMS </li>
-          <li>pièce jointe : alt + SAFP  </li>
-          <li> --inprivate "https://account.proton.me/fr/apps"</li> 
-           <li>QRCode<pre> { DISPLAYBARCODE 
+          <li>Office : signature : alt + JMS </li>
+			 <li> Dev. : """Docstring""" - Frontmatter YAML</li>
+			 <li> Dev. : Nom de classe : CamelCase
+				 Nom de constante : SNAKE_CASE
+				 Nom de variable : snake_case
+			 </li>
+          <li>Office : pièce jointe : alt + SAFP  </li>
+          <li>Navigateur :  --inprivate "https://account.proton.me/fr/apps"</li> 
+           <li>QRCode : <pre> { DISPLAYBARCODE 
  "url_vers_le_site" 
  QR \t \h 1000 } </pre></li>
          </ul>
       </details>
+-->
+<details>
+  <summary>⌨️ Raccourcis & Commandes utiles</summary>
+
+  <h4>📄 Office / Productivité</h4>
+  <ul>
+    <li>Signature Outlook : <kbd>ALT</kbd> + JMS</li>
+    <li>Insérer une pièce jointe Outlook : <kbd>ALT</kbd> + SAFP</li>
+    <li>Nouvel email Outlook : <kbd>CTRL</kbd> + N</li>
+    <li>Répondre à un email : <kbd>CTRL</kbd> + R</li>
+    <li>Transférer un email : <kbd>CTRL</kbd> + F</li>
+    <li>Rétablir : <kbd>CTRL</kbd> + Y</li>
+  </ul>
+
+
+  <h4>💻 Développement</h4>
+  <ul>
+    <li>
+      Documentation Python :
+      <code>"""Docstring"""</code>
+    </li>
+
+    <li>
+      Frontmatter YAML :
+      <pre>
+---
+title: ""
+description: ""
+date: ""
+---
+      </pre>
+    </li>
+
+    <li>
+      Convention de nommage :
+      <ul>
+        <li>Classe : <code>CamelCase</code></li>
+        <li>Constante : <code>SNAKE_CASE</code></li>
+        <li>Variable / fonction : <code>snake_case</code></li>
+      </ul>
+    </li>
+
+    <li>Commentaire ligne Python : <code># commentaire</code></li>
+    <li>Commentaire HTML : <code>&lt;!-- commentaire --&gt;</code></li>
+    <li>Commentaire CSS : <code>/* commentaire */</code></li>
+  </ul>
+
+
+  <h4>🪟 Windows - Exécuter (Win + R)</h4>
+  <ul>
+    <li>Applications utilisateur : <code>%appdata%</code></li>
+    <li>Données locales : <code>%localappdata%</code></li>
+    <li>Dossier temporaire : <code>%temp%</code></li>
+    <li>Version Windows : <code>winver</code></li>
+    <li>Informations système : <code>msinfo32</code></li>
+    <li>Configuration système : <code>msconfig</code></li>
+    <li>Gestionnaire des tâches : <code>taskmgr</code></li>
+    <li>Gestionnaire de périphériques : <code>devmgmt.msc</code></li>
+    <li>Gestion des disques : <code>diskmgmt.msc</code></li>
+    <li>Services Windows : <code>services.msc</code></li>
+    <li>Éditeur du registre : <code>regedit</code></li>
+    <li>Programmes installés : <code>appwiz.cpl</code></li>
+  </ul>
+
+
+  <h4>⏻ Arrêt / Redémarrage Windows</h4>
+  <ul>
+    <li>
+      Arrêt immédiat :
+      <code>shutdown /s /t 0</code>
+    </li>
+
+    <li>
+      Redémarrage immédiat :
+      <code>shutdown /r /t 0</code>
+    </li>
+
+    <li>
+      Arrêt avec délai de 60 secondes :
+      <code>shutdown /s /t 60</code>
+    </li>
+
+    <li>
+      Annuler un arrêt programmé :
+      <code>shutdown /a</code>
+    </li>
+  </ul>
+
+
+  <h4>🌐 Réseau</h4>
+  <ul>
+    <li>Configuration IP : <code>ipconfig</code></li>
+    <li>Configuration complète : <code>ipconfig /all</code></li>
+    <li>Vider le cache DNS : <code>ipconfig /flushdns</code></li>
+    <li>Tester une connexion : <code>ping adresse_ip</code></li>
+    <li>Voir les connexions réseau : <code>netstat -ano</code></li>
+  </ul>
+
+
+  <h4>🐧 Linux / Raspberry Pi</h4>
+  <ul>
+    <li>Mettre à jour les paquets : <code>sudo apt update && sudo apt upgrade</code></li>
+    <li>Voir l'espace disque : <code>df -h</code></li>
+    <li>Voir les processus : <code>top</code></li>
+    <li>Voir l'adresse IP : <code>hostname -I</code></li>
+    <li>Redémarrer : <code>sudo reboot</code></li>
+    <li>Éteindre : <code>sudo shutdown now</code></li>
+  </ul>
+
+
+  <h4>🔳 QR Code Word</h4>
+  <ul>
+    <li>
+      Génération QR Code :
+      <pre>
+{ DISPLAYBARCODE 
+"url_vers_le_site"
+QR \t \h 1000 }
+      </pre>
+    </li>
+  </ul>
+
+
+  <h4>🌐 Navigateur</h4>
+  <ul>
+    <li>
+      Ouvrir Proton en navigation privée :
+      <code>--inprivate "https://account.proton.me/fr/apps"</code>
+    </li>
+  </ul>
+
+</details>
+
+
+		
         <details>
         <summary>Colors</summary>
         <div class="label-color" style="background-color : #001a33 ;">#001a33</div>
