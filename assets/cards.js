@@ -298,7 +298,7 @@ const cards = [
         url: "https://secouchermoinsbete.fr/",
         icon: null,
 		text: "SCMB",
-		label:"Se Coucher Moins Bête"
+		label:"SCMB"
     },
 	
 //-----------------------
