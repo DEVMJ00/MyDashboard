@@ -103,7 +103,6 @@ header > h1 {
 	font-weight : bold;
 }
 
-
 .card {
 	display : flex ; 
 	flex-wrap : wrap ; 
@@ -124,8 +123,7 @@ header > h1 {
 	font-size : 1.2em;
 	transition: all 0.2s ease;
 }
-
-
+	
 .card:hover {
     cursor: pointer;
     transform: translateY(-8px);
@@ -182,10 +180,18 @@ main {
 	overflow-y: auto; 
 	justify-content : center; 
 	}
+	
+	
+/* =====================================================
+   BOUTON MENU MOBILE
+   ===================================================== */
+.menu-toggle {
+    display: none;
+}
 
-
-section 
-{
+   
+	
+section {
 	display : flex ; 
 	flex: 1; 
 	flex-wrap : wrap;
@@ -195,7 +201,7 @@ section
 	justify-content: space-evenly ; 
 	padding : 15px;             
 	right: 0;
-	gap : 20px ; 
+	gap : 30px ; 
 	max-width: calc(100% - 10%); /* garantit qu’on ne dépasse pas le sidebar */
 }
 
@@ -304,13 +310,6 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-/* =====================================================
-   BOUTON MENU MOBILE
-   ===================================================== */
-
-.menu-toggle {
-    display:none;
-}
 
 
 /* -------------------------------------------------
@@ -361,12 +360,8 @@ input:checked + .slider:before {
         transform:translateX(0);
     }
 
-
-
-    
-}
-
-    .menu-toggle {
+	
+	 .menu-toggle {
         display:block;
         position:fixed;
 		background-color: var(--secondary-color);
@@ -383,11 +378,13 @@ input:checked + .slider:before {
 		width : 40px;
 		height : 40px;
         right:10px;
-        z-index:1100;
+        z-index:9900;
     }
-	
+    
+}
+
 	section {
 		min-width: 0; 
-		gap : 20px ; 
+		gap : 30px ; 
 	}
 }
