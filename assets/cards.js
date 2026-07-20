@@ -209,14 +209,12 @@ const cards = [
 //-----------------------
 //       GAMING
 //-----------------------
-
-
     {
         title: "Rockstar",
         url: "https://socialclub.rockstargames.com/",
         icon: null,
 		text: "Rockstar",
-		label:"Rockstar SocialClub"
+		label: "SocialClub"
     },
 
 
@@ -224,21 +222,21 @@ const cards = [
         title: "Epic Games",
         url: "https://www.epicgames.com/site/fr/home",
         icon: "./assets/img/epicgames.png",
-		label:"Epic Games"
+		label: "Epic Games"
     },
 
     {
         title: "Steam DB",
         url: "https://steamdb.info/upcoming/free/",
         icon: "./assets/img/steamdb.webp",
-		label:"Steam DB"
+		label: "Steam DB"
     },
 
     {
         title: "G.O.G",
         url: "https://www.gog.com/fr/",
         icon: "./assets/img/gog.webp",
-		label:"G.O.G"
+		label: "G.O.G"
     },
 
     {
@@ -246,7 +244,7 @@ const cards = [
         url: "https://www.nintendo.fr/Rechercher/Rechercher-299117.html?f=147394-5-81",
         icon: "./assets/img/nintendo.svg",
 		color:"red",
-		label:"Nintendo"
+		label: "Nintendo"
     },
 
 //-----------------------
@@ -256,7 +254,7 @@ const cards = [
         title: "Facebook",
         url: "https://www.facebook.com/",
         icon: "./assets/img/fb.svg",
-		label:"Facebook"
+		label: "Facebook"
     },
 
 	    {
@@ -264,14 +262,14 @@ const cards = [
         url: "https://news.google.com/",
         icon: null,
 		text: "Actualités",
-		label:"Google Actualités"
+		label: "Google Actualités"
     },
 
     {
         title: "DTC",
         url: "https://danstonchat.com/latest.html",
         icon: "./assets/img/dtc.webp",
-		label:"DTC"
+		label: "DTC"
 		
     },
 		
@@ -280,7 +278,7 @@ const cards = [
         url: "https://linkedin.com/feed/",
         icon: null,
 		text: "LinkedIn",
-		label:"Linked In"
+		label: "Linked In"
     },
 	
 	
@@ -290,7 +288,7 @@ const cards = [
         url: "https://viedemerde.fr/",
         icon: null,
 		text: "VDM",
-		label:"VDM"
+		label: "VDM"
     },
 	
 	    {
@@ -298,7 +296,7 @@ const cards = [
         url: "https://secouchermoinsbete.fr/",
         icon: null,
 		text: "SCMB",
-		label:"SCMB"
+		label: "SCMB"
     },
 	
 //-----------------------
