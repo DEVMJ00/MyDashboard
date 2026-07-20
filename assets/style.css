@@ -15,6 +15,16 @@
 	--secondary-color : #FCDB32;
 	--header-height : 5vh;
 	--footer-height: 7vh;
+
+	--background-color: #f5f6fa;
+  --surface-color: #ffffff;
+  --border-color: #d9dce5;
+
+  --text-color: #222;
+  --code-bg: #eef1f7;
+  --dark-code-bg: #141D38;
+
+
 }
 
 
@@ -413,4 +423,188 @@ input:checked + .slider:before {
 		min-width: 0; 
 		gap : 30px ; 
 	}
+
+
+/* ===========================
+   DETAILS / BLOCS
+=========================== */
+
+details {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin-bottom: 15px;
+
+  box-shadow: 0 4px 12px rgba(20, 29, 56, 0.08);
+
+  transition: box-shadow .2s ease;
+}
+
+
+details:hover {
+  box-shadow: 0 6px 18px rgba(20, 29, 56, 0.15);
+}
+
+
+/* ===========================
+   TITRE SUMMARY
+=========================== */
+
+details summary {
+  cursor: pointer;
+
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+
+  padding: 8px 0;
+
+  user-select: none;
+}
+
+
+details summary:hover {
+  color: #000;
+}
+
+
+/* Triangle */
+details summary::marker {
+  color: var(--secondary-color);
+}
+
+
+/* ===========================
+   TITRES INTERNES
+=========================== */
+
+details h4 {
+
+  margin-top: 22px;
+  margin-bottom: 10px;
+
+  color: var(--primary-color);
+
+  font-size: .95rem;
+
+  border-bottom: 2px solid var(--secondary-color);
+
+  padding-bottom: 5px;
+}
+
+
+/* ===========================
+   LISTES
+=========================== */
+
+details ul {
+
+  padding-left: 20px;
+
+}
+
+
+details li {
+
+  margin-bottom: 9px;
+
+  color: var(--text-color);
+
+  line-height: 1.4;
+
+}
+
+
+/* ===========================
+   TOUCHES CLAVIER
+=========================== */
+
+kbd {
+
+  display: inline-block;
+
+  padding: 3px 8px;
+
+  font-family: "Consolas", monospace;
+
+  font-size: .85rem;
+
+  font-weight: bold;
+
+  color: var(--primary-color);
+
+  background: #fff;
+
+  border: 1px solid #bfc5d3;
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 2px 0 #bfc5d3;
+
+}
+
+
+/* ===========================
+   COMMANDES INLINE
+=========================== */
+
+code {
+
+  background: var(--code-bg);
+
+  color: var(--primary-color);
+
+  padding: 3px 7px;
+
+  border-radius: 5px;
+
+  font-family: "Consolas", "Courier New", monospace;
+
+  font-size: .9rem;
+
+  border-left: 3px solid var(--secondary-color);
+
+}
+
+
+/* ===========================
+   BLOCS CODE
+=========================== */
+
+pre {
+
+  background: var(--dark-code-bg);
+
+  color: #ffffff;
+
+  padding: 14px;
+
+  border-radius: 8px;
+
+  overflow-x: auto;
+
+  font-family: "Consolas", "Courier New", monospace;
+
+  font-size: .85rem;
+
+  line-height: 1.5;
+
+  border-left: 4px solid var(--secondary-color);
+
+}
+
+
+/* ===========================
+   SELECTION TEXTE
+=========================== */
+
+code::selection,
+pre::selection {
+
+  background: var(--secondary-color);
+
+  color: var(--primary-color);
+
 }
