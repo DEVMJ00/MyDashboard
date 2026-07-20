@@ -143,7 +143,7 @@ const cards = [
     {
         title: "GitHub Dév.",
         url: "https://github.com/login",
-        icon: ".assets/img/Githubdev.png",
+        icon: "./assets/img/Githubdev.png",
 		label:"GitHub Dév."
     },
 
