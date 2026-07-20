@@ -5,154 +5,220 @@ const cards = [
     // label: "Texte affiché sous la carte",
     // text: "Texte dans la carte si pas d'image",
     // icon: "chemin/image.png",
+	// category: "Catégorie du lien"
     // url: "https://..."
 // }
 
 
+
+//-----------------------
+//       FAVORIS
+//-----------------------
 	{
 		title: "Annonce T3 Eybens",
 		url: "https://devmj00.github.io/Appart_Eybens/",
-		icon: null,
+		icon: "https://github.com/DEVMJ00/Appart_Eybens/blob/main/cover.webp?raw=true",
 		text: "T3",
-		label: "Appart à vendre"
+		label: "Appart à vendre",
+		category: "Favoris"
 	},
+	
+	{
+		title: "Portfolio",
+		url: "https://devmj00.github.io/",
+		icon: "https://github.com/DEVMJ00/DEVMJ00.github.io/blob/main/assets/preview.jpg?raw=true",
+		text: "Portfolio",
+		label: "Portfolio",
+		category: "Favoris"
+	},
+
+	{
+        title: "Proton Apps",
+        url: "https://account.proton.me/fr/apps",
+        icon: "./assets/img/proton.png",
+        color: "#EDE8FF",
+		label:"Proton Apps",
+		category: "Favoris"
+    },
 
     {
         title: "Google",
         url: "https://www.google.com/",
         icon: "./assets/img/google.png",
-		label:"Google"
+		label:"Google",
+		category: "Favoris"
     },
-
-    {
+	
+	
+	    {
         title: "Google Maps",
         url: "https://www.google.com/maps",
         icon: "./assets/img/maps.png",
-		label:"Google Maps"
+		label:"Google Maps",
+		category: "Favoris"
+		
     },
-
-    {
-        title: "Proton Apps",
-        url: "https://account.proton.me/fr/apps",
-        icon: "./assets/img/proton.png",
-        color: "#EDE8FF",
-		label:"Proton Apps"
-    },
-
+	
+	
+    
+	
+	
+//-----------------------
+//       A.I
+//-----------------------
     {
         title: "Lumo",
         url: "https://lumo.proton.me/u/3/",
         icon: "./assets/img/lumo.png",
-		label:"Lumo"
+		label:"Lumo",
+		category: "A.I"
     },
 
     {
         title: "ChatGPT",
         url: "https://chat.openai.com/chat",
         icon: "./assets/img/chatgpt.png",
-        label:"ChatGPT"
+        label:"ChatGPT",
+		category: "A.I"
 		
     },
 
+
+//-----------------------
+//       ADMINISTRATIF
+//-----------------------
     {
         title: "Pajemploi",
         url: "https://pajemploi.urssaf.fr/employeur/tableau-de-bord",
         icon: "./assets/img/pajemploi.svg",
-		label:"PajEmploi"
+		label:"PajEmploi",
+		category: "Administratif"
     },
 
     {
         title: "Impôts",
         url: "https://cfspart.impots.gouv.fr/LoginMDP?op=c&url=aHR0cHM6Ly9jZnNwYXJ0LmltcG90cy5nb3V2LmZyL3BvcnRhbC9kZ2kvcHVibGljL3BlcnNvO2pzZXNzaW9uaWQ9SU9EMUlNQVhET0dJSlFGSUVJUUNGRlE/cGFnZUlkPXBuYTJwYXImc2ZpZD0zMA==",
         icon: "./assets/img/impots.png",
-		label:"Impôts"
+		label:"Impôts",
+		category: "Administratif"
     },
 
     {
         title: "Crédit Agricole",
         url: "https://www.ca-sudrhonealpes.fr/",
         icon: "./assets/img/ca.webp",
-		label:"C.A"
+		label:"C.A",
+		category: "Administratif"
     },
 
     {
         title: "Caisse d'Epargne",
         url: "https://www.caisse-epargne.fr/languedoc-roussillon/",
         icon: "./assets/img/ce.webp",
-		label:"C.E"
+		label:"C.E",
+		category: "Administratif"
     },
 
     {
         title: "Hotmail",
         url: "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
         icon: "https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
-		label:"Hotmail"
+		label:"Hotmail",
+		category: "Administratif"
     },
 
     {
         title: "EDF",
         url: "https://espace-client.edf.fr/",
         icon: "./assets/img/edf.png",
-		label:"E.D.F"
+		label:"E.D.F",
+		category: "Administratif"
     },
 
+
+//-----------------------
+//       GEEK
+//-----------------------
     {
         title: "Cheats Sheet",
         url: "cheats_sheet.html",
         icon: null,
         text: ">_ :",
-		label:"Cheat Sheets"
+		label:"Cheat Sheets",
+		category: "Geek"
     },
-
-    {
-        title: "Facebook",
-        url: "https://www.facebook.com/",
-        icon: "./assets/img/fb.svg",
-		label:"Facebook"
-    },
-
+	
     {
         title: "Spotnix",
         url: "http://192.168.1.165:8000/accounts/login/",
         icon: null,
         text: "SPOTNIX",
-		label:"Spotnix"
+		label:"Spotnix",
+		category: "Geek"
     },
 
     {
         title: "Raspberry Pi Connect",
         url: "https://id.raspberrypi.com/sign-in",
         icon: "./assets/img/raspberry.png",
-		label:"Raspberry Pi"
+		label:"Raspberry Pi",
+		category: "Geek"
     },
 
     {
         title: "Freebox OS",
         url: "http://mafreebox.freebox.fr/",
         icon: "./assets/img/freeboxos.png",
-		label:"Impôts"
+		label:"FreeboxOS",
+		category: "Geek"
     },
 
     {
         title: "GitHub",
         url: "https://github.com/login",
         icon: "./assets/img/github.png",
-		label:"GitHub"
+		label:"GitHub",
+		category: "Geek"
     },
 
     {
         title: "GitHub Dév.",
         url: "https://github.com/login",
         icon: "./assets/img/Githubdev.png",
-		label:"GitHub Dév."
+		label:"GitHub Dév.",
+		category: "Geek"
     },
 
     {
         title: "Thiings",
         url: "https://www.thiings.co/things",
         icon: "./assets/img/thiings.png",
-		label:"Thiings"
+		label:"Thiings",
+		category: "Geek"
     },
+	
+	    {
+        title: "Squoosh | Convertir img en svg",
+        url: "https://squoosh.app",
+        text:"Squoosh",
+		icon: null,
+		label:"Squoosh",
+		category: "Geek"
+    },
+	
+//-----------------------
+//       GAMING
+//-----------------------
+
+
+    {
+        title: "Rockstar",
+        url: "https://socialclub.rockstargames.com/",
+        icon: null,
+		text: "Rockstar",
+		label:"Rockstar SocialClub"
+    },
+
 
     {
         title: "Epic Games",
@@ -179,7 +245,26 @@ const cards = [
         title: "Nintendo",
         url: "https://www.nintendo.fr/Rechercher/Rechercher-299117.html?f=147394-5-81",
         icon: "./assets/img/nintendo.svg",
+		color:"red",
 		label:"Nintendo"
+    },
+
+//-----------------------
+//       DETENTE
+//-----------------------
+    {
+        title: "Facebook",
+        url: "https://www.facebook.com/",
+        icon: "./assets/img/fb.svg",
+		label:"Facebook"
+    },
+
+	    {
+        title: "Google Actualité",
+        url: "https://news.google.com/",
+        icon: null,
+		text: "Actualités",
+		label:"Google Actualités"
     },
 
     {
@@ -189,7 +274,56 @@ const cards = [
 		label:"DTC"
 		
     },
+		
+	    {
+        title: "Linked In",
+        url: "https://linkedin.com/feed/",
+        icon: null,
+		text: "LinkedIn",
+		label:"Linked In"
+    },
 	
+	
+	
+	    {
+        title: "VDM",
+        url: "https://viedemerde.fr/",
+        icon: null,
+		text: "VDM",
+		label:"VDM"
+    },
+	
+	    {
+        title: "SCMB",
+        url: "https://secouchermoinsbete.fr/",
+        icon: null,
+		text: "SCMB",
+		label:"Se Coucher Moins Bête"
+    },
+	
+//-----------------------
+//       SHOPPING
+//-----------------------
+		    {
+        title: "Amazon",
+        url: "https://amazon.com/",
+        icon: null,
+		text: "Amazon",
+		label:"Amazon"
+    },
+	
+	
+			    {
+        title: "LeBonCoin",
+        url: "https://leboncoin.fr/",
+        icon: null,
+		text: "LBC",
+		label:"LeBonCoin"
+    },
+	
+//-----------------------
+//       PRO
+//-----------------------
 	 {
         title: "Ulis",
         url: "http://srvuweb-p1//ULISNGE/index.do?clientHostName=%clientname%",
