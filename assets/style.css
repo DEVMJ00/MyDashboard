@@ -20,11 +20,9 @@
   --surface-color: #ffffff;
   --border-color: #d9dce5;
 
-  --text-color: black;
+  --text-color: #000000;
   --code-bg: #eef1f7;
   --dark-code-bg: #141D38;
-
-
 }
 
 
@@ -231,16 +229,19 @@ section {
 	min-height: calc(100vh - var(--footer-height));
 	padding-bottom: calc(var(--footer-height) + 20px);  /* ← Marge supplémentaire */
 	}
-    
+
+
 .sidebar summary {
 	color : var(--secondary-color) ; 
 }
 	
+/*
 .sidebar p, 
 .sidebar li,
 .sidebar  ul {
 	color : white ; 
 }	
+*/
 	
 /* .sidebar h1 { */
 	/* text-align : center ;  */
