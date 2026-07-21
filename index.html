@@ -20,8 +20,10 @@
 <head>
 
  <nav class="navbar">
-	 <button id="openModal">n°tiers</button>
-<dialog id="myModal">
+	 <button data-modal="numTiers">n°tiers</button>
+     <button data-modal="cheatSheets"> Cheat</button>
+	 
+	 <dialog id="numTiers">
     <h2>numero tiers</h2>
 <ul>
           <li><strong> Cécile : </strong> <em> CVA </em><br> 20277596 </li>
@@ -37,8 +39,71 @@
         Ajouter du contenu de modale.
     </p>
 
-    <button id="closeModal">Fermer</button>
+    <button data-close>Fermer</button>
 </dialog>
+
+
+
+
+	 
+<dialog id="cheatSheets">
+	<h2>Raccourcis</h2>
+	
+<div>
+      Annuler un arrêt programmé :
+      <code>shutdown /a</code>
+    </li>
+  </ul>
+
+
+  <h4>🌐 Réseau</h4>
+  <ul>
+    <li>Configuration IP : <code>ipconfig</code></li>
+    <li>Configuration complète : <code>ipconfig /all</code></li>
+    <li>Vider le cache DNS : <code>ipconfig /flushdns</code></li>
+    <li>Tester une connexion : <code>ping adresse_ip</code></li>
+    <li>Voir les connexions réseau : <code>netstat -ano</code></li>
+  </ul>
+
+
+  <h4>🐧 Linux / Raspberry Pi</h4>
+  <ul>
+    <li>Mettre à jour les paquets : <code>sudo apt update && sudo apt upgrade</code></li>
+    <li>Voir l'espace disque : <code>df -h</code></li>
+    <li>Voir les processus : <code>top</code></li>
+    <li>Voir l'adresse IP : <code>hostname -I</code></li>
+    <li>Redémarrer : <code>sudo reboot</code></li>
+    <li>Éteindre : <code>sudo shutdown now</code></li>
+  </ul>
+
+
+  <h4>🔳 QR Code Word</h4>
+  <ul>
+    <li>
+      Génération QR Code :
+      <pre>
+{ DISPLAYBARCODE 
+"url_vers_le_site"
+QR \t \h 1000 }
+      </pre>
+    </li>
+  </ul>
+
+
+  <h4>🌐 Navigateur</h4>
+  <ul>
+    <li>
+      Ouvrir Proton en navigation privée :
+      <code>--inprivate "https://account.proton.me/fr/apps"</code>
+    </li>
+  </ul>
+
+	
+</div>
+	<button data-close>Fermer</button>
+</dialog>
+
+	 
 </nav> 
 
 </head>
