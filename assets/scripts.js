@@ -108,6 +108,32 @@ cards.forEach(card => {
 
 
 
+//modale
+
+document.querySelectorAll("[data-modal]").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        document
+            .getElementById(button.dataset.modal)
+            .showModal();
+
+    });
+
+});
+
+document.querySelectorAll("[data-close]").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        button.closest("dialog").close();
+
+    });
+
+});
+
+
+/*
 const modal = document.getElementById("myModal");
 
 document.getElementById("openModal")
@@ -119,3 +145,4 @@ document.getElementById("closeModal")
     .addEventListener("click", () => {
         modal.close();
     });
+*/
