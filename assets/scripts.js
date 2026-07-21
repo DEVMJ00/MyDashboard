@@ -105,3 +105,17 @@ cards.forEach(card => {
     `);
 
 });
+
+
+
+const modal = document.getElementById("myModal");
+
+document.getElementById("openModal")
+    .addEventListener("click", () => {
+        modal.showModal();
+    });
+
+document.getElementById("closeModal")
+    .addEventListener("click", () => {
+        modal.close();
+    });
