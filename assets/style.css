@@ -13,10 +13,11 @@
 :root {
 	--primary-color : #141D38; 
 	--secondary-color : #FCDB32;
+	--background-color: ghostwhite;
 	--header-height : 5vh;
 	--footer-height: 7vh;
 
-	--background-color: #f5f6fa;
+	/*--background-color: #f5f6fa;*/
   --surface-color: #ffffff;
   --border-color: #d9dce5;
 
@@ -28,7 +29,7 @@
 
 a {
 	text-decoration : none ; 
-	color : ghostwhite ; 
+	color : var(--primary-color) ; 
 }
 
 
@@ -44,7 +45,7 @@ button {
 body {
 	font-family: "Antonio", sans-serif;
 	align-items : center ; 
-	background-color : ghostwhite; 
+	background-color : var(--background-color); 
 	height: 100vh;
 	overflow: auto; 
 	overflow-x: hidden;
@@ -679,7 +680,8 @@ pre::selection {
 /*--------- MODALE -----*/
 dialog {
     border: none;
-    border-radius: 12px;
+	background-color: var(--background-color);
+	border-radius: 12px;
     padding: 1.5rem;
    /* width: min(600px, 90vw);*/
     width: 80vw;
