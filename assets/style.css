@@ -609,3 +609,21 @@ pre::selection {
   color: var(--primary-color);
 
 }
+
+
+
+
+
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: min(600px, 90vw);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,.55);
+    backdrop-filter: blur(3px);
+}
