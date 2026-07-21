@@ -205,6 +205,15 @@ const cards = [
 		label:"Squoosh",
 		category: "Geek"
     },
+
+	{
+        title: "ColorHexa",
+		url: "https://www.colorhexa.com/",
+		text: "ColorHexa",
+		icon: null,
+		label:"ColorHexa",
+		category: "Geek"	
+	},
 	
 //-----------------------
 //       GAMING
