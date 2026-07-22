@@ -49,17 +49,17 @@ body {
 
 }
 
-/*
+
 body.dark {
 	background-color: var(--primary-color);
 	color: white;
 }
 
-
+/*
 body.dark button {
 	border: solid 1px ghostwhite;
 }
-*/
+
 
 
 body.dark aside,
@@ -67,7 +67,7 @@ aside.dark {
     background-color: var(--primary-color);
 }
 
-
+*/
 body.dark .card {
     border: 2px solid ghostwhite;
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);  
