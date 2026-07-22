@@ -203,7 +203,7 @@ section {
 	flex: 1; 
 	flex-wrap : wrap;
 	flex-direction : row ; 
-	align-items : center ; 
+	align-items : space-between ; 
 	align-content : space-evenly ;
 	justify-content: space-evenly ; 
 	padding : 15px;             
