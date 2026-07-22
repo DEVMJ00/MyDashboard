@@ -49,7 +49,7 @@ body {
 
 }
 
-
+/*
 body.dark {
 	background-color: var(--primary-color);
 	color: white;
@@ -59,6 +59,8 @@ body.dark {
 body.dark button {
 	border: solid 1px ghostwhite;
 }
+*/
+
 
 body.dark aside,
 aside.dark {
@@ -114,7 +116,7 @@ header > h1 {
 	display: flex ; 
 	flex-wrap: wrap ; 
 	width: 160px ;
-	height: 120px;
+	height: 110px;
 	/* min-width : 130px ; */
 	/* min-height : 100px; */
 	background-color: white ;
