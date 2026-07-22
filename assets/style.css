@@ -55,8 +55,9 @@ body.dark {
 	color: white;
 }
 
+
 body.dark button {
-	background-color: lightgrey;
+	border: solid 1px ghostwhite;
 }
 
 body.dark aside,
@@ -643,10 +644,8 @@ pre::selection {
 }
 
 /* Clic */
-
 .navbar a:active,
 .navbar button:active {
-
     transform: scale(.97);
 }
 
@@ -656,9 +655,9 @@ dialog {
 	background-color: var(--background-color);
 	border-radius: 12px;
     padding: 1.5rem;
-   /* width: min(600px, 90vw);*/
-    width: 80vw;
-	height: 80vh; 
+    width: min(600px, 90vw);
+    /*width: 80vw;
+	height: 80vh; */
 	overflow-y: auto;
 	box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
