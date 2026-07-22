@@ -409,7 +409,7 @@ const cards = [
 
     {
         title: "BPU",
-        url: "https://sdh38.sharepoint.com/sites/coordination/Contrats%20cadres/Forms/AllItems.aspx",
+        url: "https://sdh38.sharepoint.com/sites/coordination/Contrats%20cadres/Forms/AllItems.aspx?id=%2Fsites%2Fcoordination%2FContrats%20cadres%2FContrats%20Cadres%20Documents%20utilisateurs%2001%2004%202024%2FBPU%20CCTP%20UTILISATEURS%20SDH&viewid=c0a34562%2Da42f%2D4c1d%2Db7f9%2D2b9f43f0b4b4",
         text: "BPU",
 		label:"B.P.U"
     },
