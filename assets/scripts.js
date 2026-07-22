@@ -49,13 +49,13 @@ btn.addEventListener("click", () => {
 //----------------------------
 //          MENU BURGER
 //----------------------------
-const button = document.querySelector(".menu-toggle");
-const sidebar = document.querySelector(".sidebar");
+//const button = document.querySelector(".menu-toggle");
+//const sidebar = document.querySelector(".sidebar");
 
-button.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
+//button.addEventListener("click", () => {
+//    sidebar.classList.toggle("open");
 
-});
+//});
 
 
 
