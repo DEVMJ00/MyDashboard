@@ -21,10 +21,12 @@
 
  <nav class="navbar">
 	 <button data-modal="numTiers">n°tiers</button>
-     <button data-modal="cheatSheets"> Cheat</button>
-	 <button data-modal="colors"> Colors</button>
+	 <button data-modal="git">Git</button>
+	 <button data-modal="markdown">Markdown</button>
+     <button data-modal="cheatSheets">Cheat</button>
+	 <button data-modal="colors">Colors</button>
+	
 	 <dialog id="numTiers">
-   
    <div class="display_column center">
     <h2>numero tiers</h2>
    
@@ -181,8 +183,47 @@ QR \t \h 1000 }
     <button data-close >Fermer</button>
   </div>
 </dialog>
+ <dialog id="Git">
+   <div class="display_column center">
+    <h2>Git</h2>
+   <h3>Commandes :</h3>
+<ul><h4>Cloner un repo git :</h4>
 
 
+<li> Ouvrir l'IDE </li>
+<li> Onglet Git, puis "clone"</li>
+<li> Saisir l'url de repository distant</li>
+<li> Valider </li>
+<li> Se rendre sur GitHub, créer un nouveau repo depuis son compte perso
+copier le lien.</li>
+
+<li> Revenir sur l'ide</li>
+
+<li> Ouvrir la console</li>
+<code> 
+	<pre>
+		git remote -v
+		git remote set-url origin https://github.com/DEVMJ00/NOM_DU_NOUVEAU_DEPOT_FRAICHEMENT_CREE.git  
+		git push -u origin main
+	</pre>
+</code>
+</div>
+    <div class="center">
+    <button data-close >Fermer</button>
+  </div>
+ </dialog>
+
+ <dialog id="markdown">
+   <div class="display_column center">
+    <h2>Markdown</h2>
+   
+
+</div>
+    <div class="center">
+    <button data-close >Fermer</button>
+  </div>
+ </dialog>
+	 
 		 <dialog id="colors">
      <div class="display_column">
 			 <h2>Colors</h2>
