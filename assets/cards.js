@@ -196,6 +196,15 @@ const cards = [
 		label:"Thiings",
 		category: "Geek"
     },
+
+	{
+		title: "Khroma.co",
+		url: "https://www.khroma.co/",
+		text: "khroma.co",
+		icon: null,
+		label: "khroma.co",
+		category: "Geek"
+	},
 	
 	    {
         title: "Squoosh | Convertir img en svg",
