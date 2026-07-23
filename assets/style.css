@@ -51,16 +51,25 @@ body {
 
 
 body.dark {
+	/*
 	background-color: var(--primary-color);
 	color: white;
+    */
+	background-color: #0D0208;
+	color: #00CC33;
+	text-shadow:0 0 2px rgba(0,255,65,.15);
+	font-family: "JetBrains Mono", monospace;
+	cursor: crosshair;
+}
+
+
+body.dark button {
+	border: solid 1px #00CC33;
+	border-radius: 0px;
+	background-color: #101010;
 }
 
 /*
-body.dark button {
-	border: solid 1px ghostwhite;
-}
-
-
 
 body.dark aside,
 aside.dark {
@@ -69,15 +78,18 @@ aside.dark {
 
 */
 body.dark .card {
-    border: 2px solid ghostwhite;
+   /* border: 2px solid ghostwhite;*/
+	border: solid 1px #00CC33;
+	border-radius: 0px;
+	background-color: #101010;
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);  
 }
 
-
+/*
 body.dark .card-label {
 	color: var(--secondary-color); 
 }
-	
+	*/
 .card {
 	display: flex ; 
 	flex-wrap: wrap ; 
