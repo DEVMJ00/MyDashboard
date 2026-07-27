@@ -39,6 +39,7 @@ button {
 }
 
 
+
 body {
 	font-family: "Antonio", sans-serif;
 	align-items: center ; 
@@ -343,13 +344,14 @@ main {
 .navbar button {
     display: flex;
     align-items: center;
-    justify-content: center;
+	align-self: flex-end;  
+    /* justify-content: space-between; */
     min-width: 90px;
     height: 40px;
     padding: 0 16px;
     border: none;
     border-radius: 8px;
-    background: var(--primary-color);
+    background: ghostwhite;
     color: var(--secondary-color);
     font-size: .9rem;
     font-weight: 600;
