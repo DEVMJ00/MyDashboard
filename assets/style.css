@@ -11,8 +11,8 @@
 
 
 :root {
-	--primary-color : #141D38; 
-	--secondary-color : #FCDB32;
+	--primary-color : #163300; 
+	--secondary-color : #BDD9D7;
 	--background-color: ghostwhite;
 	--header-height : 5vh;
 	--footer-height: 7vh;
@@ -245,13 +245,13 @@ footer {
 	position : sticky ;
 	left : 0;
 	bottom : 0 ; 
-	color : var(--secondary-color) ; 
+	color : ghostwhite ; 
 	background-color :var(--primary-color); 
 	width : 100% ;
 	height: var(--footer-height);
     min-height: var(--footer-height);
-	justify-content : center ;
-	align-items : center; 
+	justify-content : center ; /*aligment horizontal*/
+	align-items : baseline;  /* alignement vertical*/
 }
 
 header {
@@ -352,7 +352,7 @@ main {
     border: none;
     border-radius: 8px;
     background: ghostwhite;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-size: .9rem;
     font-weight: 600;
     text-decoration: none;
