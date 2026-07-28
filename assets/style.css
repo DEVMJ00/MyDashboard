@@ -11,13 +11,13 @@
 
 
 :root {
-	--primary-color : #163300; 
-	--secondary-color : #BDD9D7;
-	--background-color: ghostwhite;
+	--primary-color : #009688; 
+	--secondary-color : #ECFFFC;
+	--background-color: #e9e9e9;
 	--header-height : 5vh;
 	--footer-height: 7vh;
     --surface-color: #ffffff;
-    --border-color: #d9dce5;
+    --border-color: #9b9b9b;
     --text-color: #000000;
     --code-bg: #eef1f7;
     --dark-code-bg: #141D38;
@@ -28,16 +28,6 @@ a {
 	text-decoration : none ; 
 	color : var(--primary-color) ; 
 }
-
-
-button {
-	padding : 0px; 
-	border : none;
-	border-radius : 6px;
-	cursor : pointer;
-	font-size : 20px;
-}
-
 
 
 body {
@@ -283,7 +273,7 @@ h3 {
 
 img {
   border-radius : 10px;
-  padding : 10px;
+  padding : 5px;
   width: auto;
   object-fit: cover;
   max-width : 100%;
@@ -335,7 +325,7 @@ main {
     align-items: center;
     gap: 10px;
     padding: 12px;
-    background: lightgray;
+    background: var(--background-color);
     /*border-radius: 12px;*/
     /*margin: 0 15px 20px;*/
 }
@@ -345,14 +335,15 @@ main {
     display: flex;
     align-items: center;
 	align-self: flex-end;  
-    /* justify-content: space-between; */
-    min-width: 90px;
-    height: 40px;
-    padding: 0 16px;
-    border: none;
+	border: solid 1px var(--border-color);
     border-radius: 8px;
     background: ghostwhite;
     color: var(--text-color);
+    justify-content: center;
+    /* min-width: 120px; */
+	padding : 0 15px 0 15px ;
+    width : auto;
+	height: 40px;
     font-size: .9rem;
     font-weight: 600;
     text-decoration: none;
@@ -449,6 +440,7 @@ pre::selection {
 	background-color: var(--secondary-color);
 	-webkit-transition: .4s;
 	transition: .4s;
+		
 }
 
 .slider:before {
@@ -477,14 +469,18 @@ input:checked + .slider:before {
 	-webkit-transform : translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
+
 }
 
 .slider.round {
 	border-radius: 34px;
+
 }
 
 .slider.round:before {
 	border-radius: 50%;
+		/* border : solid 1px var(--border-color); */
+		border : solid 1px var(--primary-color);
 }
 /* ===================================================== */
 
