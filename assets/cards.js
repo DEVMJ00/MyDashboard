@@ -380,7 +380,7 @@ const cards = [
 		    {
         title: "Amazon",
         url: "https://amazon.com/",
-        icon: null,
+        icon: "./assets/img/Amazon.svg",
 		text: "Amazon",
 		label:"Amazon"
     },
