@@ -229,7 +229,8 @@ const cards = [
         url: "https://fontawesome.com/",
         icon: null,
 		text: "Font Awesome",
-		label: "Font Awesome"
+		label: "Font Awesome",
+		category: "Geek"
     },
 	
 	{
@@ -237,7 +238,8 @@ const cards = [
         url: "https://svgl.app/",
         icon: null,
 		text: "SVGL",
-		label: "SVGL"
+		label: "SVGL",
+		category: "Geek"
     },
 	
 		    {
@@ -245,7 +247,8 @@ const cards = [
         url: "https://flaticon.com/",
         icon: null,
 		text: "FlatIcon",
-		label: "FlatIcon"
+		label: "FlatIcon",
+		category: "Geek"
     },
 
 	
