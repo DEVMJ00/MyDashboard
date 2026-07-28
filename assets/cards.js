@@ -239,6 +239,16 @@ const cards = [
 		text: "SVGL",
 		label: "SVGL"
     },
+	
+		    {
+        title: "Flat Icon",
+        url: "https://flaticon.com/",
+        icon: null,
+		text: "FlatIcon",
+		label: "FlatIcon"
+    },
+
+	
 //-----------------------
 //       GAMING
 //-----------------------
