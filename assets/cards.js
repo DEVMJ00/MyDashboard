@@ -390,7 +390,7 @@ const cards = [
 			    {
         title: "LeBonCoin",
         url: "https://leboncoin.fr/",
-        icon: "./assets/lbc.svg",
+        icon: "./assets/img/lbc.svg",
 		text: "LBC",
 		label:"LeBonCoin",
 		category: "shopping"
