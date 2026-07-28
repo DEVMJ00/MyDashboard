@@ -275,7 +275,12 @@ header {
   align-items: center;
 }
 
-
+header img {
+	height: var(--header-height);
+	width: auto;
+	border: solid 1px white;
+}
+	
 h1 {
 	padding: 3px;
 	text-align: center; 
