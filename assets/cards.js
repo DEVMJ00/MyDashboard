@@ -266,7 +266,7 @@ const cards = [
     {
         title: "Rockstar",
         url: "https://socialclub.rockstargames.com/",
-        icon: null,
+        icon: "./assets/img/rockstar.svg",
 		text: "Rockstar",
 		label: "SocialClub"
     },
