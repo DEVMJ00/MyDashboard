@@ -77,7 +77,7 @@ const cards = [
     {
         title: "ChatGPT",
         url: "https://chat.openai.com/chat",
-        icon: "./assets/img/chatgpt.png",
+        icon: "./assets/img/ChatGPT_Light.svg",
         label:"ChatGPT",
 		category: "A.I"
 		
@@ -251,6 +251,14 @@ const cards = [
 		category: "Geek"
     },
 
+    {
+        title: "PDFSam",
+        url: "https://pdfsam.org/fr/",
+        icon: "./assets/img/pdfsam.svg",
+        text: "PDFSam",
+		label:"PDF Sam",
+		category: "Geek"
+    },
 	
 //-----------------------
 //       GAMING
