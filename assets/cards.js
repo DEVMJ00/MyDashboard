@@ -314,9 +314,9 @@ const cards = [
 	    {
         title: "Google Actualité",
         url: "https://news.google.com/",
-        icon: null,
+        icon: "./assets/img/google-news.png",
 		text: "Actualités",
-		label: "Google Actualités"
+		label: "News"
     },
 
 	    {
