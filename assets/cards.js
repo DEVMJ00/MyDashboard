@@ -323,6 +323,15 @@ const cards = [
 		label: "Steam",
 		category: "Gaming"
 	},
+
+	{
+        title: "Humble",
+        url: "https://fr.humblebundle.com/",
+        icon: "./assets/img/humblebundle.svg",
+		text: "Humble Bundle",
+		label: "Humble Bundle",
+		category: "Gaming"
+    },
 //-----------------------
 //       DETENTE
 //-----------------------
