@@ -1,37 +1,49 @@
-//----------------------------
-//          HORLOGE
-//----------------------------
+//--------------------------------------
+//             HORLOGE
+//--------------------------------------
 
-// Crée un élément <p>
-const p = document.createElement('p');
+const footer = document.getElementById("site-footer") || document.querySelector("footer");
 
-// Formate la date (sans heure)
-const dateOptions = { 
-  weekday: 'long', 
-  day: 'numeric', 
-  month: 'long', 
-  year: 'numeric' 
-};
-
-// Formate uniquement l'heure
-const timeOptions = { 
-  hour: '2-digit', 
-  minute: '2-digit' 
-};
-
-const today = new Date();
-const formattedDate = new Intl.DateTimeFormat('fr-FR', dateOptions).format(today);
-const formattedTime = new Intl.DateTimeFormat('fr-FR', timeOptions).format(today);
-
-// Assemblage manuel sans "à"
-p.textContent = `${formattedDate} | ${formattedTime}`;
-
-// Insère le paragraphe dans le footer
-const footer = document.getElementById('site-footer') || document.querySelector('footer');
 if (footer) {
-  footer.appendChild(p);
-} else {
-  document.body.appendChild(p);
+
+    const clock = document.createElement("p");
+    clock.id = "clock";
+    footer.appendChild(clock);
+
+    function updateClock() {
+
+        const now = new Date();
+
+        let date = now.toLocaleDateString("fr-FR", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
+
+        // Met une majuscule au premier caractère
+        date = date.charAt(0).toUpperCase() + date.slice(1);
+
+		const hours = String(now.getHours()).padStart(2, "0");
+		const minutes = String(now.getMinutes()).padStart(2, "0");
+
+		clock.innerHTML = `
+		🗓️	${date} |
+		⌚	${hours}<span class="separator"> : </span>${minutes}
+		`;
+
+    }
+
+    updateClock();
+
+    // Premier rafraîchissement exactement au changement de minute
+    const delay = (60 - new Date().getSeconds()) * 1000;
+
+    setTimeout(() => {
+        updateClock();
+        setInterval(updateClock, 60000);
+    }, delay);
+
 }
 
 
@@ -46,22 +58,9 @@ btn.addEventListener("click", () => {
 	});
 
 
-//----------------------------
-//          MENU BURGER
-//----------------------------
-//const button = document.querySelector(".menu-toggle");
-//const sidebar = document.querySelector(".sidebar");
-
-//button.addEventListener("click", () => {
-//    sidebar.classList.toggle("open");
-
-//});
-
-
-
 
 //--------------------------------------
-//          AJOUT DE NOUVELLES CARDS
+//      AJOUT DE NOUVELLES CARDS
 //--------------------------------------
 const container = document.querySelector(".mesCards");
 
@@ -108,7 +107,9 @@ cards.forEach(card => {
 
 
 
-//modale
+//--------------------------------------
+//              MODALE
+//--------------------------------------
 
 document.querySelectorAll("[data-modal]").forEach(button => {
 
@@ -131,18 +132,3 @@ document.querySelectorAll("[data-close]").forEach(button => {
     });
 
 });
-
-
-/*
-const modal = document.getElementById("myModal");
-
-document.getElementById("openModal")
-    .addEventListener("click", () => {
-        modal.showModal();
-    });
-
-document.getElementById("closeModal")
-    .addEventListener("click", () => {
-        modal.close();
-    });
-*/
