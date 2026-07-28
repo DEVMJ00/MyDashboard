@@ -262,8 +262,9 @@ header {
 }
 
 header img {
+	/*
 	max-height: 70px;
-	width: auto;
+	width: auto;*/
 	border: solid 1px white;
 }
 	
