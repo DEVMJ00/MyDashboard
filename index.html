@@ -24,11 +24,12 @@
  <nav class="navbar">
 	 <button data-modal="numTiers"><img src="./assets/img/numtiers.png">n°tiers</button>
 	 <button data-modal="git"><img src="./assets/img/github.png">Git</button>
-	 <button data-modal="markdown">Markdown</button>
+	 <button data-modal="markdown"><img src="./assets/img/md.png">Markdown</button>
    <button data-modal="linux"><img src="./assets/img/linux.png">Linux</button>
-   <button data-modal="cheatSheets"> >:_ Cheat</button>
-   <button data-modal="powershell"><img src="./assets/img/powershell.png">Powershell</button>
+   <button data-modal="sqlCheats"><img src="./assets/img/sql.png">SQL</button>
+   <button data-modal="cheatSheets"><img src="./assets/img/powershell.png"> CheatSheets</button>
 	 <button data-modal="colors"><img src="./assets/img/colors.png">Colors</button>
+	 
 	
   <!-- 
   <button data-modal="colors">xxxxx</button>
@@ -140,7 +141,15 @@ rm -i           #Demande une confirmation avant suppression</pre></li>
   <li>Rapport détaillé sur le matériel : <code>  sudo apt install hwinfo</code>, puis : <code>sudo hwinfo</code></li>
 </ul>
 
-
+  <h3>🐧 Linux / Raspberry Pi</h3>
+  <ul>
+    <li>Mettre à jour les paquets : <code>sudo apt update && sudo apt upgrade</code></li>
+    <li>Voir l'espace disque : <code>df -h</code></li>
+    <li>Voir les processus : <code>top</code></li>
+    <li>Voir l'adresse IP : <code>hostname -I</code></li>
+    <li>Redémarrer : <code>sudo reboot</code></li>
+    <li>Éteindre : <code>sudo shutdown now</code></li>
+  </ul>
 <h3>Remarques supplémentaires</h3>
 <p>
 Pour consulter le manuel d'une commande, utiliser <code>man [nom_commande]</code>.
@@ -152,6 +161,155 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
   </div>
 </dialog>
 
+
+
+<dialog id="sqlCheats">
+<!-- <div class="display_column center"> -->
+<h2>🗄️ SQL / Oracle - Cheat Sheet</h2>
+
+<h3>🔍 Sélection</h3>
+<ul>
+    <li><code>SELECT * FROM table;</code></li>
+    <li><code>SELECT col1, col2 FROM table;</code></li>
+    <li><code>SELECT DISTINCT colonne FROM table;</code></li>
+    <li><code>SELECT COUNT(*) FROM table;</code></li>
+    <li><code>SELECT COUNT(DISTINCT colonne) FROM table;</code></li>
+</ul>
+
+<h3>🎯 Filtrer</h3>
+<ul>
+    <li><code>WHERE</code></li>
+    <li><code>AND / OR / NOT</code></li>
+    <li><code>LIKE '%texte%'</code></li>
+    <li><code>IN (...)</code></li>
+    <li><code>BETWEEN ... AND ...</code></li>
+    <li><code>IS NULL / IS NOT NULL</code></li>
+</ul>
+
+<h3>📊 Trier</h3>
+<ul>
+    <li><code>ORDER BY colonne ASC</code></li>
+    <li><code>ORDER BY colonne DESC</code></li>
+</ul>
+
+<h3>📦 Groupement</h3>
+<ul>
+    <li><code>GROUP BY</code></li>
+    <li><code>HAVING COUNT(*) > 1</code></li>
+</ul>
+
+<h3>🔗 Jointures</h3>
+<ul>
+    <li><code>INNER JOIN</code></li>
+    <li><code>LEFT JOIN</code></li>
+    <li><code>RIGHT JOIN</code></li>
+    <li><code>FULL OUTER JOIN</code></li>
+</ul>
+
+<h3>📝 Modification</h3>
+<ul>
+    <li><code>INSERT INTO ...</code></li>
+    <li><code>UPDATE ... SET ... WHERE ...</code></li>
+    <li><code>DELETE FROM ... WHERE ...</code></li>
+    <li><strong>Toujours vérifier le WHERE avant UPDATE ou DELETE.</strong></li>
+</ul>
+
+<h3>💾 Transactions</h3>
+<ul>
+    <li><code>COMMIT;</code></li>
+    <li><code>ROLLBACK;</code></li>
+    <li><code>SAVEPOINT nom;</code></li>
+</ul>
+
+<h3>⚡ Oracle</h3>
+<ul>
+    <li><code>DUAL</code></li>
+    <li><code>SYSDATE</code></li>
+    <li><code>SYSTIMESTAMP</code></li>
+    <li><code>ROWNUM</code></li>
+    <li><code>FETCH FIRST n ROWS ONLY</code></li>
+</ul>
+
+<h3>📅 Dates</h3>
+<ul>
+    <li><code>TO_DATE()</code></li>
+    <li><code>TO_CHAR()</code></li>
+    <li><code>ADD_MONTHS()</code></li>
+    <li><code>MONTHS_BETWEEN()</code></li>
+    <li><code>TRUNC(date)</code></li>
+</ul>
+
+<h3>🔤 Fonctions utiles</h3>
+<ul>
+    <li><code>NVL()</code></li>
+    <li><code>COALESCE()</code></li>
+    <li><code>CASE WHEN ... THEN ... END</code></li>
+    <li><code>SUBSTR()</code></li>
+    <li><code>INSTR()</code></li>
+    <li><code>REPLACE()</code></li>
+    <li><code>TRIM()</code></li>
+    <li><code>UPPER()</code></li>
+    <li><code>LOWER()</code></li>
+</ul>
+
+<h3>📈 Agrégats</h3>
+<ul>
+    <li><code>COUNT()</code></li>
+    <li><code>SUM()</code></li>
+    <li><code>AVG()</code></li>
+    <li><code>MIN()</code></li>
+    <li><code>MAX()</code></li>
+</ul>
+
+<h3>🧠 Sous-requêtes</h3>
+<ul>
+    <li><code>EXISTS</code></li>
+    <li><code>NOT EXISTS</code></li>
+    <li><code>IN (SELECT ...)</code></li>
+</ul>
+
+<h3>📑 Métadonnées Oracle</h3>
+<ul>
+    <li><code>USER_TABLES</code></li>
+    <li><code>USER_TAB_COLUMNS</code></li>
+    <li><code>ALL_TABLES</code></li>
+    <li><code>ALL_TAB_COLUMNS</code></li>
+    <li><code>USER_OBJECTS</code></li>
+</ul>
+
+<h3>🚀 Performance</h3>
+<ul>
+    <li>Limiter le <code>SELECT *</code>.</li>
+    <li>Indexer les colonnes filtrées fréquemment.</li>
+    <li>Toujours filtrer avant de joindre.</li>
+    <li>Éviter les fonctions sur les colonnes indexées.</li>
+    <li>Utiliser <code>EXPLAIN PLAN</code>.</li>
+</ul>
+
+<h3>⚠️ Bonnes pratiques</h3>
+<ul>
+    <li>Tester les UPDATE avec un SELECT.</li>
+    <li>Toujours prévoir un ROLLBACK possible.</li>
+    <li>Utiliser des alias explicites.</li>
+    <li>Commenter les requêtes complexes.</li>
+    <li>Sauvegarder avant les traitements massifs.</li>
+</ul>
+
+<h3>📚 Vocabulaire</h3>
+<ul>
+    <li>DDL : CREATE, ALTER, DROP</li>
+    <li>DML : SELECT, INSERT, UPDATE, DELETE</li>
+    <li>DCL : GRANT, REVOKE</li>
+    <li>TCL : COMMIT, ROLLBACK</li>
+</ul>
+
+<!-- </div> -->
+
+<div class="center">
+    <button data-close>Fermer</button>
+</div>
+
+</dialog>
 	 
 <dialog id="cheatSheets">
 	<h2>Raccourcis</h2>
@@ -242,15 +400,7 @@ date: ""
     <li>Annuler un arrêt programmé :<code>shutdown /a</code></li>
   </ul>
 
-  <h3>🐧 Linux / Raspberry Pi</h3>
-  <ul>
-    <li>Mettre à jour les paquets : <code>sudo apt update && sudo apt upgrade</code></li>
-    <li>Voir l'espace disque : <code>df -h</code></li>
-    <li>Voir les processus : <code>top</code></li>
-    <li>Voir l'adresse IP : <code>hostname -I</code></li>
-    <li>Redémarrer : <code>sudo reboot</code></li>
-    <li>Éteindre : <code>sudo shutdown now</code></li>
-  </ul>
+
 
 <h3>⚡ BONUS : OPTIONS CACHÉES UTILES </h3>
 <ul>
