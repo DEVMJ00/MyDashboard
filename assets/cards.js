@@ -98,7 +98,7 @@ const cards = [
     {
         title: "Impôts",
         url: "https://cfspart.impots.gouv.fr/LoginMDP?op=c&url=aHR0cHM6Ly9jZnNwYXJ0LmltcG90cy5nb3V2LmZyL3BvcnRhbC9kZ2kvcHVibGljL3BlcnNvO2pzZXNzaW9uaWQ9SU9EMUlNQVhET0dJSlFGSUVJUUNGRlE/cGFnZUlkPXBuYTJwYXImc2ZpZD0zMA==",
-        icon: "./assets/img/impots.png",
+        icon: "./assets/img/impots.svg",
 		label:"Impôts",
 		category: "Administratif"
     },
@@ -227,7 +227,7 @@ const cards = [
 	{
         title: "Font Awesome",
         url: "https://fontawesome.com/",
-        icon: null,
+        icon: "./assets/img/fontawesome.jpeg",
 		text: "Font Awesome",
 		label: "Font Awesome",
 		category: "Geek"
@@ -268,7 +268,8 @@ const cards = [
         url: "https://socialclub.rockstargames.com/",
         icon: "./assets/img/rockstar.svg",
 		text: "Rockstar",
-		label: "SocialClub"
+		label: "SocialClub",
+		category: "Gaming"
     },
 
 
@@ -276,29 +277,34 @@ const cards = [
         title: "Epic Games",
         url: "https://www.epicgames.com/site/fr/home",
         icon: "./assets/img/epicgames.png",
-		label: "Epic Games"
+		label: "Epic Games",
+		category: "Gaming"
+
     },
 
     {
         title: "Steam DB",
         url: "https://steamdb.info/upcoming/free/",
         icon: "./assets/img/steamdb.webp",
-		label: "Steam DB"
+		label: "Steam DB",
+		category: "Gaming"
     },
 
     {
         title: "G.O.G",
         url: "https://www.gog.com/fr/",
         icon: "./assets/img/gog.webp",
-		label: "G.O.G"
+		label: "G.O.G",
+		category: "Gaming"
     },
 
     {
         title: "Nintendo",
         url: "https://www.nintendo.fr/Rechercher/Rechercher-299117.html?f=147394-5-81",
         icon: "./assets/img/nintendo.svg",
-		color:"red",
-		label: "Nintendo"
+		color:"#E60012",
+		label: "Nintendo",
+		category: "Gaming"
     },
 
 //-----------------------
@@ -309,6 +315,14 @@ const cards = [
         url: "https://www.facebook.com/",
         icon: "./assets/img/fb.svg",
 		label: "Facebook"
+    },
+
+
+    {
+        title: "Whatsapp",
+        url: "https://www.whatsapp.com/",
+        icon: "./assets/img/whatsapp.svg",
+		label: "Whatsapp"
     },
 
 	    {
@@ -361,7 +375,7 @@ const cards = [
 	    {
         title: "VDM",
         url: "https://viedemerde.fr/",
-        icon: null,
+        icon: "./assets/img/vdm.png",
 		text: "VDM",
 		label: "VDM"
     },
@@ -369,7 +383,7 @@ const cards = [
 	    {
         title: "SCMB",
         url: "https://secouchermoinsbete.fr/",
-        icon: null,
+        icon: "./assets/img/scmb.jpeg",
 		text: "SCMB",
 		label: "SCMB"
     },
