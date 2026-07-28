@@ -351,7 +351,7 @@ const cards = [
 	    {
         title: "Linked In",
         url: "https://linkedin.com/feed/",
-        icon: null,
+        icon: "./assets/img/linkedin.png",
 		text: "LinkedIn",
 		label: "Linked In"
     },
@@ -382,7 +382,8 @@ const cards = [
         url: "https://amazon.com/",
         icon: "./assets/img/Amazon.svg",
 		text: "Amazon",
-		label:"Amazon"
+		label: "Amazon",
+		category: "shopping"
     },
 	
 	
@@ -391,7 +392,8 @@ const cards = [
         url: "https://leboncoin.fr/",
         icon: null,
 		text: "LBC",
-		label:"LeBonCoin"
+		label:"LeBonCoin",
+		category: "shopping"
     },
 	
 //-----------------------
