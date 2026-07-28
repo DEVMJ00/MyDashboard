@@ -33,6 +33,21 @@ a {
 	color : var(--primary-color) ; 
 }
 
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.sun {
+	animation: rotation 5s linear infinite;
+	font-size : 1.5rem;
+}
+
 
 body {
 	font-family: "Nunito", sans-serif;
@@ -246,7 +261,7 @@ footer {
 	height: var(--footer-height);
     min-height: var(--footer-height);
 	justify-content : center ; /*aligment horizontal*/
-	align-items : space-between;  /* alignement vertical*/
+	align-items : center;  /* alignement vertical*/
 }
 
 header {
@@ -321,6 +336,37 @@ main {
 	padding: 2%;
 }
 
+.message {
+	display: flex;
+	justify-content: center;
+	min-height: 25px;
+	width : 100%;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border-bottom: solid 2px var(--primary-color);
+	animation: message 5s ease forwards;
+	z-index: 9999;
+}
+
+
+
+@keyframes message {
+	0% {
+		opacity: 0;
+	}	
+	
+	5% {
+		opacity: 1;
+	}
+	
+	70% {
+		opacity: 1;
+	}	
+	
+	100% {
+		opacity: 0;
+	}
+}
 
 /* =====================================================
 						NAVBAR
@@ -387,9 +433,9 @@ pre {
 	border-left: 4px solid var(--secondary-color);
 }
 
-p {
-	margin-top : 10px;
-}
+/* p { */
+	/* margin-top : 10px; */
+/* } */
 
 section {
 	display : flex ; 
@@ -493,7 +539,15 @@ input:checked + .slider:before {
 }
 /* ===================================================== */
 
+.separator {
+    animation: blink 1s steps(1) infinite;
+}
 
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
 
 
 /* =====================================================
