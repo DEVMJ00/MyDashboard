@@ -241,8 +241,18 @@ const cards = [
 		label: "SVGL",
 		category: "Geek"
     },
+
+
+	{
+		title: "SVGRepo",
+		url:"https://www.svgrepo.com/",
+		icon: null,
+		text: "SVGRepo",
+		label: "SVGRepo",
+		category: "Geek"
+	},
 	
-		    {
+	{
         title: "Flat Icon",
         url: "https://flaticon.com/",
         icon: null,
@@ -301,7 +311,7 @@ const cards = [
     {
         title: "Nintendo",
         url: "https://www.nintendo.fr/Rechercher/Rechercher-299117.html?f=147394-5-81",
-        icon: "./assets/img/nintendo.png",
+        icon: "./assets/img/nintendo.svg",
 		label: "Nintendo",
 		category: "Gaming"
     },
@@ -309,7 +319,7 @@ const cards = [
 	{
 		title: "Steam",
 		url: "https://store.steampowered.com/?l=french",
-		icon: "./assets/img/steam.png",
+		icon: "./assets/img/steam.svg",
 		label: "Steam",
 		category: "Gaming"
 	},
