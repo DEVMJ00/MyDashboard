@@ -260,13 +260,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-header img {
-	/*
-	max-height: 70px;
-	width: auto;*/
-	border: solid 1px white;
-}
 	
 h1 {
 	padding: 3px;
