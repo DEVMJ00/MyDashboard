@@ -301,12 +301,18 @@ const cards = [
     {
         title: "Nintendo",
         url: "https://www.nintendo.fr/Rechercher/Rechercher-299117.html?f=147394-5-81",
-        icon: "./assets/img/nintendo.svg",
-		color:"#E60012",
+        icon: "./assets/img/nintendo.png",
 		label: "Nintendo",
 		category: "Gaming"
     },
 
+	{
+		title: "Steam",
+		url: "https://store.steampowered.com/?l=french",
+		icon: "./assets/img/steam.png",
+		label: "Steam",
+		category: "Gaming"
+	},
 //-----------------------
 //       DETENTE
 //-----------------------
