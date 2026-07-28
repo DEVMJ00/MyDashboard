@@ -19,6 +19,8 @@
     --surface-color: #ffffff;
     --border-color: #9b9b9b;
     --text-color: #000000;
+	--dark-color-text: #dbdbdb;
+	--dark-background-color: #101010;
     --code-bg: #eef1f7;
     --dark-code-bg: #141D38;
 }
@@ -47,17 +49,18 @@ body.dark {
 	color: white;
     */
 	background-color: #0D0208;
-	color: #00CC33;
 	text-shadow:0 0 2px rgba(0,255,65,.15);
 	font-family: "JetBrains Mono", monospace;
 	cursor: crosshair;
+	color: var(--dark-color-text);
 }
 
 
 body.dark button {
 	border: solid 1px #00CC33;
-	border-radius: 0px;
+	/* border-radius: 0px; */
 	background-color: #101010;
+	color: var(--dark-color-text);
 }
 
 /*
@@ -69,18 +72,21 @@ aside.dark {
 
 */
 body.dark .card {
-   /* border: 2px solid ghostwhite;*/
 	border: solid 1px #00CC33;
-	border-radius: 0px;
-	background-color: #101010;
-	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);  
+	/* border-radius: 0px; */
+	background-color: var(--dark-background-color);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); 
+	color: var(--dark-color-text);
 }
 
-/*
-body.dark .card-label {
-	color: var(--secondary-color); 
+body.dark .navbar {
+	background-color : var(--dark-background-color);
 }
-	*/
+
+body.dark .card-label {
+		color: var(--dark-color-text);
+}
+	
 .card {
 	display: flex ; 
 	flex-wrap: wrap ; 
@@ -90,7 +96,7 @@ body.dark .card-label {
 	/* min-height : 100px; */
 	background-color: white ;
 	color: black; 
-	border: 2px solid #023F6F;
+	border: 2px solid var(--border-color);
 	border-radius: 20px ; 
 	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4) ;
 	justify-content: center ; 
@@ -502,7 +508,7 @@ input:checked + .slider:before {
 	}
 
 	dialog {
-		min-width: 95vw;
+		min-width: 99vw;
 	}
 }
 
@@ -521,7 +527,7 @@ input:checked + .slider:before {
 	}
 	
 	dialog {
-		min-width: 95vw;
+		min-width: 99vw;
 	}	
 }
 
