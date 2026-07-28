@@ -225,6 +225,14 @@ const cards = [
 	},
 	
 	{
+        title: "Font Awesome",
+        url: "https://fontawesome.com/",
+        icon: null,
+		text: "Font Awesome",
+		label: "Font Awesome"
+    },
+	
+	{
         title: "SVGL (Social Vectoriel)",
         url: "https://svgl.app/",
         icon: null,
