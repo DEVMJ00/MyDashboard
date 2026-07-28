@@ -224,6 +224,13 @@ const cards = [
 		category: "Geek"	
 	},
 	
+	{
+        title: "SVGL (Social Vectoriel)",
+        url: "https://svgl.app/",
+        icon: null,
+		text: "SVGL",
+		label: "SVGL"
+    },
 //-----------------------
 //       GAMING
 //-----------------------
@@ -282,6 +289,27 @@ const cards = [
 		text: "Actualités",
 		label: "Google Actualités"
     },
+
+	    {
+        title: "Twitch",
+        url: "https://twitch.tv/",
+        icon: "./assets/img/twitch.svg",
+		text: "Twitch",
+		label: "Twitch"
+    },
+
+	    {
+        title: "Discord",
+        url: "https://discord.com/",
+        icon: "./assets/img/discord.svg",
+		text: "Discord",
+		label: "Discord"
+    },
+
+
+
+
+
 
     {
         title: "DTC",
