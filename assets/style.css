@@ -251,7 +251,7 @@ footer {
 	height: var(--footer-height);
     min-height: var(--footer-height);
 	justify-content : center ; /*aligment horizontal*/
-	align-items : baseline;  /* alignement vertical*/
+	align-items : space-between;  /* alignement vertical*/
 }
 
 header {
