@@ -519,6 +519,7 @@ input:checked + .slider:before {
 		width : 90px ;
 		height : 60px;
 		font-size : 0.8em;
+		border-radius: 10px;
     }
 	
 	.section {
