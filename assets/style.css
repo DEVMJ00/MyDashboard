@@ -34,20 +34,6 @@ a {
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-.sun {
-	animation: rotation 5s linear infinite;
-	font-size : 1.5rem;
-}
-
 
 body {
 	font-family: "Nunito", sans-serif;
@@ -275,8 +261,8 @@ header {
   align-items: center;
 }
 
-header img {
-	height: var(--header-height);
+header > img {
+	max-height: 120px;
 	width: auto;
 	border: solid 1px white;
 }
