@@ -261,8 +261,8 @@ header {
   align-items: center;
 }
 
-header > img {
-	max-height: 120px;
+header img {
+	max-height: 70px;
 	width: auto;
 	border: solid 1px white;
 }
