@@ -280,8 +280,10 @@ h1 {
 	padding: 3px;
 	text-align: center; 
 	font-family: "Sora", sans-serif;
+	/*
 	-webkit-text-stroke: 1px white;
 	text-shadow: 0 0 5px ghostwhite;
+	*/
 }
 
 h3 {
