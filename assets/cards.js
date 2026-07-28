@@ -334,6 +334,15 @@ const cards = [
     },
 
 	    {
+        title: "Noisli",
+        url: "https://www.noisli.com/",
+        icon: "./assets/img/noisli.png",
+		text: "Noisli",
+		label: "Noisli"
+    },
+
+
+	    {
         title: "Twitch",
         url: "https://twitch.tv/",
         icon: "./assets/img/twitch.svg",
