@@ -17,8 +17,9 @@ const cards = [
 	{
 		title: "Annonce T3 Eybens",
 		url: "https://devmj00.github.io/Appart_Eybens/",
-		icon: "https://github.com/DEVMJ00/Appart_Eybens/blob/main/cover.webp?raw=true",
-		text: "T3",
+		// icon: "https://github.com/DEVMJ00/Appart_Eybens/blob/main/cover.webp?raw=true",
+		icon: null,
+		text: "T3 EYBENS",
 		label: "Appart à vendre",
 		category: "Favoris"
 	},
@@ -98,7 +99,7 @@ const cards = [
     {
         title: "Impôts",
         url: "https://cfspart.impots.gouv.fr/LoginMDP?op=c&url=aHR0cHM6Ly9jZnNwYXJ0LmltcG90cy5nb3V2LmZyL3BvcnRhbC9kZ2kvcHVibGljL3BlcnNvO2pzZXNzaW9uaWQ9SU9EMUlNQVhET0dJSlFGSUVJUUNGRlE/cGFnZUlkPXBuYTJwYXImc2ZpZD0zMA==",
-        icon: "./assets/img/impots.svg",
+        icon: "./assets/img/impots.png",
 		label:"Impôts",
 		category: "Administratif"
     },
@@ -219,7 +220,7 @@ const cards = [
         title: "ColorHexa",
 		url: "https://www.colorhexa.com/",
 		text: "ColorHexa",
-		icon: null,
+		icon: "./assets/img/color.jpg",
 		label:"ColorHexa",
 		category: "Geek"	
 	},
@@ -269,6 +270,18 @@ const cards = [
 		label:"PDF Sam",
 		category: "Geek"
     },
+	
+	{
+        title: "DaFont",
+        url: "https://dafont.com/",
+        icon: "./assets/img/dafont.png",
+        text: "DaFont",
+		color: "#c00",
+		label:"DaFont",
+		category: "Geek"
+    },
+	
+	
 	
 //-----------------------
 //       GAMING
