@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My DashBoard</title>
   <link rel="stylesheet" href="./assets/style.css">
-	<link rel="stylesheet" href="./assets/style.css?v=2">
   <!-- Police d'écriture -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,21 +12,21 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">-->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
 </head>
 <body>
 	<!--
 	<button class="menu-toggle">☰</button>
 	-->
  <header>
- <h1>My DashBoard</h1>
+ <img src="./assets/img/Logo_Devmj.png" alt="Logo"><h1>My DashBoard</h1>
 
   <label class="switch">
     <input type="checkbox">
     <span id="themeBtn" class="slider round"></span>
     </label>
  </header>  
-
+<!-- <head> -->
  <nav class="navbar">
 	 <button data-modal="numTiers"><img src="./assets/img/numtiers.png">n°tiers</button>
 	 <button data-modal="git"><img src="./assets/img/github.png">Git</button>
@@ -177,12 +176,13 @@
     <li><strong>inurl:</strong> recherche dans l'URL.</li>
     <li><strong>intext:</strong> recherche dans le contenu.</li>
 </ul>
-
 <div class="center">
     <button data-close>Fermer</button>
 </div>
-
 </dialog>
+
+
+
 <!--------------------------------
            MARKDOWN 
 --------------------------------->
@@ -260,7 +260,7 @@ function hello() {
 | Nom   | Âge |
 |-------|----:|
 | Mario | 37  |
-| Timio |  0  |</pre>
+| Tilio |  0  |</pre>
 
         <h3>😀 Emojis</h3>
         <ul>
@@ -323,10 +323,14 @@ function hello() {
     <div class="center">
         <button data-close>Fermer</button>
     </div>
+  </dialog>
+    
+    
+    
 <!--------------------------------
            LINUX
 --------------------------------->
-</dialog>
+
      <dialog id="linux">
    <div class="display_column center">
     <h2>Linux</h2>
@@ -420,6 +424,7 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
     <button data-close >Fermer</button>
   </div>
 </dialog>
+
 
 
 <!--------------------------------
@@ -575,7 +580,6 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
 
 
 
-
 <!--------------------------------
           CHEATSHEETS
 --------------------------------->
@@ -711,8 +715,6 @@ start write test.rtf
     <button data-close >Fermer</button>
   </div>
 </dialog>
-
-
 
 
 
@@ -967,6 +969,8 @@ start write test.rtf
 
 </dialog>
 
+
+
 <!--------------------------------
               GIT
 --------------------------------->
@@ -1008,8 +1012,6 @@ copier le lien.</li>
     <button data-close >Fermer</button>
   </div>
  </dialog>
-
-
 
 
 
@@ -1115,12 +1117,12 @@ copier le lien.</li>
 
 <div class="color-label" style="background-color : #6A1B9A ; color : #F9EEFF;">#6A1B9A</div>
 <div class="color-label" style="background-color : #F9EEFF ; color : #6A1B9A;">#F9EEFF</div>
-		</div>
+  </div>
          
       <div class="center">
         <button data-close >Fermer</button>
       </div>
-  </div>
+  <!-- </div> -->
      </dialog>
 </nav> 
 	<!--
@@ -1128,6 +1130,7 @@ copier le lien.</li>
 🌞 Hello
 </div>
 	-->
+  </head>
 <main>
 	
  <!--     
@@ -1154,4 +1157,4 @@ copier le lien.</li>
 <script src="assets/cards.js"></script>
 <script src="./assets/scripts.js"></script>
 </body>
-</html>
+<!-- </html> -->
