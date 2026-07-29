@@ -6,9 +6,16 @@
   <title>My DashBoard</title>
   <link rel="stylesheet" href="./assets/style.css">
   <!-- Police d'écriture -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+  
   
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
@@ -19,7 +26,16 @@
 	<button class="menu-toggle">☰</button>
 	-->
  <header>
- <img src="./assets/img/Logo_Devmj.png" alt="Logo"><h1>My DashBoard</h1>
+ 
+ <div class="logo">
+	<span class="chevron">></span>
+	<span class="ev">ev</span>
+	<span class="mj">mj</span>
+</div>
+
+ <h1>My DashBoard</h1>
+
+
 
   <label class="switch">
     <input type="checkbox">
@@ -30,12 +46,12 @@
  <nav class="navbar">
 	 <button data-modal="numTiers"><img src="./assets/img/numtiers.png">n°tiers</button>
 	 <button data-modal="git"><img src="./assets/img/github.png">Git</button>
-	 <button data-modal="googleDorks"><img src="./assets/img/G.png">Google Dorks</button>
+	 <button data-modal="googleDorks"><img src="./assets/img/G.png"> Dorks</button>
 	 <button data-modal="markdown"><img src="./assets/img/md.png">Markdown</button>
    <button data-modal="linux"><img src="./assets/img/linux.png">Linux</button>
    <button data-modal="sqlCheats"><img src="./assets/img/sql.png">SQL</button>
    <button data-modal="cssCheats"><img src="./assets/img/css.svg">CSS</button>
-   <button data-modal="cheatSheets"><img src="./assets/img/powershell.png"> CheatSheets</button>
+   <button data-modal="cheatSheets"><img src="./assets/img/powershell.png"> Cheat</button>
 	 <button data-modal="colors"><img src="./assets/img/colors.png">Colors</button>
 	
 	
@@ -85,7 +101,7 @@
            Google Dorks 
 --------------------------------->
 <dialog id="googleDorks">
-<h2>🔎 Google Dorks</h2>
+<h2 autofocus>🔎 Google Dorks</h2>
 
 <h3>📄 Rechercher sur un site</h3>
 <ul>
@@ -187,7 +203,7 @@
            MARKDOWN 
 --------------------------------->
 <dialog id="markdown">
-        <h2>📝 Markdown - Cheat Sheet</h2>
+        <h2>📝 Markdown</h2>
 
         <h3>📖 Titres</h3>
         <ul>
@@ -432,7 +448,7 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
 --------------------------------->
 <dialog id="sqlCheats">
 <!-- <div class="display_column center"> -->
-<h2>🗄️ SQL / Oracle - Cheat Sheet</h2>
+<h2>🗄️ SQL / Oracle </h2>
 
 <h3>🔍 Sélection</h3>
 <ul>
@@ -584,7 +600,8 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
           CHEATSHEETS
 --------------------------------->
 <dialog id="cheatSheets">
-	<h2>Raccourcis</h2>
+	
+  <h2 class="center"> ⭐ Cheat Sheets</h2>
 	
 <div>
 	  <h3>📄 Office / Productivité</h3>
@@ -629,7 +646,7 @@ date: ""
   </ul>
 
 
-  <h3>⌨️ Windows - Exécuter (Win + R)</h3>
+  <h3>⌨️ Commande Exécuter (Win + R)</h3>
   <ul>
     <li>Applications utilisateur : <code>%appdata%</code></li>
     <li>Données locales : <code>%localappdata%</code></li>
@@ -660,7 +677,6 @@ date: ""
  </ul>
  <h4>🔒 SÉCURITÉ & CONFIDENTIALITÉ</h4>
 <ul>
-<li>Chiffrement du disque (recherche via menu démarrer) : <code>BitLocker</code></li>
 <li>Gérer les utilisateurs / connexion automatique <code>netplwiz</code></li>
 <li>Analyse et réparation des fichiers système : <code>sfc /scannow</code></li> 
 </ul> 
@@ -1022,10 +1038,22 @@ copier le lien.</li>
      <div class="display_column">
 			 <h2>Colors</h2>
 			 <div class="colors">
-				 <div class="color-label" style="background-color : #001a33 ;">#001a33</div>
-        <div class="color-label" style="background-color : #7ab3eb ;">#7ab3eb</div>
-        <div class="color-label" style="background-color : #F28CBA ;">#F28CBA</div>
-        <div class="color-label" style="background-color : #EC5197 ;">#EC5197</div>
+       <div class="display_row"> <strong>DEVMJ :</strong> 
+          <div class="color-label" style="background-color : #001a33 ;">#001a33</div>
+          <div class="color-label" style="background-color : #7ab3eb ;">#7ab3eb</div>
+          <div class="color-label" style="background-color : #F28CBA ;">#F28CBA</div>
+          <div class="color-label" style="background-color : #EC5197 ;">#EC5197</div>
+        </div>
+        
+        
+         <div class="display_row"><strong>Linkso :</strong> 
+          <div class="color-label" style="background-color : #00140b ; color: #00A0D4;"> #00140b </div>
+          <div class="color-label" style="background-color : #00A0D4 ; color: #00140b;"> #00A0D4 </div>
+          <div class="color-label" style="background-color : #065A82 ; color: white"> #065A82 </div>
+        </div>
+        
+        <div class="color-label" style="background-color : darkgreen ;">darkgreen</div>
+        
         <div class="color-label" style="background-color : darkgreen ;">darkgreen</div>
         <div class="color-label" style="background-color : #009c00 ;">#009c00</div>
         <div class="color-label" style="background-color : #c50000 ;">#c50000</div>
