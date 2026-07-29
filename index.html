@@ -64,7 +64,7 @@
   
   <p>texte</p>
     <div class="center">
-    <button data-close >Fermer</button>
+    <button data-close>X</button>
   </div>
 </dialog>
   -->
@@ -91,7 +91,7 @@
 </ul>
 </div>
     <div class="center">
-    <button data-close >Fermer</button>
+    <button data-close>X</button>
   </div>
 </dialog>
 
@@ -193,7 +193,7 @@
     <li><strong>intext:</strong> recherche dans le contenu.</li>
 </ul>
 <div class="center">
-    <button data-close>Fermer</button>
+    <button data-close>X</button>
 </div>
 </dialog>
 
@@ -337,7 +337,7 @@ function hello() {
 
 
     <div class="center">
-        <button data-close>Fermer</button>
+        <button data-close>X</button>
     </div>
   </dialog>
     
@@ -437,7 +437,7 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
 </p>
 
     <div class="center">
-    <button data-close >Fermer</button>
+    <button data-close>X</button>
   </div>
 </dialog>
 
@@ -589,7 +589,7 @@ Créer des alias pour des commandes courantes avec <code>alias</code> pour gagne
 <!-- </div> -->
 
 <div class="center">
-    <button data-close>Fermer</button>
+    <button data-close>X</button>
 </div>
 
 </dialog>
@@ -728,7 +728,7 @@ start write test.rtf
 	
 </div>
   <div class="center">
-    <button data-close >Fermer</button>
+    <button data-close>X</button>
   </div>
 </dialog>
 
@@ -980,7 +980,7 @@ start write test.rtf
 
 
 <div class="center">
-    <button data-close>Fermer</button>
+    <button data-close>X</button>
 </div>
 
 </dialog>
@@ -1014,7 +1014,7 @@ copier le lien.</li>
 	</pre>
 </div>
     <div class="center">
-    <button data-close >Fermer</button>
+    <button data-close>X</button>
   </div>
  </dialog>
 
@@ -1025,7 +1025,7 @@ copier le lien.</li>
 
 </div>
     <div class="center">
-    <button data-close >Fermer</button>
+    <button data-close>X</button>
   </div>
  </dialog>
 
@@ -1035,10 +1035,48 @@ copier le lien.</li>
               COLORS
 --------------------------------->
 		 <dialog id="colors">
-     <div class="display_column">
-			 <h2>Colors</h2>
-			 <div class="colors">
-       <div class="display_row"> <strong>DEVMJ :</strong> 
+     
+			 <h2>🎨 Colors</h2>
+       <p>Une couleur HSL se compose de 3 valeurs :
+       <code>hsl(H, S, L)</code>
+       H = Hue (teinte)
+       S = Saturation (intensité)
+       L = Lightness (luminosité)
+       
+       Pour générer une paire de couleurs à partir d'une couleur, on part d'une couleur principale :
+       </p>
+       <pre>
+  Primaire :
+  H = 210
+  S = 80%
+  L = 50%
+      </pre>
+      <p>
+      On conserve la teinte (H) car on veut rester dans la même famille.
+      Ensuite on crée une variante :
+      Variante douce (secondaire)
+      On réduit la saturation :
+      </p>
+      <code>
+      S : 80% → 50%
+      </code>
+      <p>On augmente la luminosité :</p>
+      <code>
+      L : 50% → 75%
+      </code>
+      <h3>Résultat :</h3>
+<pre>
+Primaire :
+hsl(210, 80%, 50%)
+
+Secondaire :
+hsl(210, 50%, 75%)
+</pre>
+
+<h3>Quelque couleurs :</h3>
+  <div class="display_column">     
+      <div class="colors">
+        <div class="display_row"> <strong>DEVMJ :</strong> 
           <div class="color-label" style="background-color : #001a33 ;">#001a33</div>
           <div class="color-label" style="background-color : #7ab3eb ;">#7ab3eb</div>
           <div class="color-label" style="background-color : #F28CBA ;">#F28CBA</div>
@@ -1148,7 +1186,7 @@ copier le lien.</li>
   </div>
          
       <div class="center">
-        <button data-close >Fermer</button>
+        <button id="btn_fermeture" data-close >X</button>
       </div>
   <!-- </div> -->
      </dialog>
