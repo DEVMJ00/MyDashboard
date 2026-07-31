@@ -335,12 +335,8 @@ kbd {
 	font-family: "Audiowide", sans-serif;
 	letter-spacing: 3%;
 	font-size: 2.5em;
-	
 	animation:
 	hologram 5s infinite;
-
-		
-
 }
 
 .chevron {
@@ -656,6 +652,27 @@ input:checked + .slider:before {
 		border : solid 1px var(--couleur-primaire);
 }
 /* ===================================================== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background: #f0f0f0;
+      text-align: left;
+    }
+
+
+
+
+
+
+
+
+
 
 .separator {
     animation: blink 1s steps(1) infinite;
