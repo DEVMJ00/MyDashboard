@@ -19,7 +19,7 @@ const cards = [
 		url: "https://devmj00.github.io/carte_visite/",
 		icon: null,
 		text: "⭐️ Carte de Visite",
-		label: null,
+		label: " ",
 		category: "Favoris"
 	},
 	
@@ -29,14 +29,14 @@ const cards = [
 		// icon: "https://github.com/DEVMJ00/Appart_Eybens/blob/main/cover.webp?raw=true",
 		icon: null,
 		text: "⭐️ T3 EYBENS",
-		label: null,
+		label: " ",
 		category: "Favoris"
 	},
 	
 	{
 		title: "Portfolio",
 		url: "https://devmj00.github.io/",
-		icon: "https://github.com/DEVMJ00/DEVMJ00.github.io/blob/main/assets/preview.jpg?raw=true",
+		icon: null,
 		text: "⭐️ Portfolio",
 		label: " ",
 		category: "Favoris"
