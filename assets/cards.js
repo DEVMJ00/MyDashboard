@@ -15,6 +15,15 @@ const cards = [
 //       FAVORIS
 //-----------------------
 	{
+		title: "Carte de visite numérique",
+		url: "https://devmj00.github.io/carte_visite/",
+		icon: null,
+		text: "Carte de Visite",
+		label: "Carte de visite",
+		category: "Favoris"
+	},
+	
+	{
 		title: "Annonce T3 Eybens",
 		url: "https://devmj00.github.io/Appart_Eybens/",
 		// icon: "https://github.com/DEVMJ00/Appart_Eybens/blob/main/cover.webp?raw=true",
