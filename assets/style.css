@@ -30,7 +30,8 @@
     /* --border-color: #9b9b9b; */
     --couleur-texte: #000000;
 	--dark-couleur-texte: #dbdbdb;
-	--dark-background-color: #101010;
+	--dark-background-color: #34495E;
+	--dark-background-card-color: #607D8B;
     --code-bg: #eef1f7;
     --dark-code-bg: #141D38;
 }
@@ -58,9 +59,9 @@ body.dark {
 	background-color: var(--couleur-primaire);
 	color: white;
     */
-	background-color: #0D0208;
+	background-color: var(--dark-background-color);
 	text-shadow:0 0 2px rgba(0,255,65,.15);
-	font-family: "JetBrains Mono", monospace;
+	/*font-family: "JetBrains Mono", monospace;*/
 	cursor: crosshair;
 	color: var(--dark-couleur-texte);
 }
@@ -69,7 +70,7 @@ body.dark {
 body.dark button {
 	border: solid 1px #00CC33;
 	/* border-radius: 0px; */
-	background-color: #101010;
+	background-color: var(--dark-background-card-color);
 	color: var(--dark-couleur-texte);
 }
 
@@ -83,7 +84,7 @@ aside.dark {
 */
 body.dark .card {
 	border: solid 1px #00CC33;
-	background-color: var(--dark-background-color);
+	background-color: var(--dark-background-card-color);
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); 
 	color: var(--dark-couleur-texte);
 }
