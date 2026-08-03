@@ -125,11 +125,11 @@ const cards = [
 
 
 	
-	    {
+	{
         title: "Laposte",
         url: "https://www.laposte.fr/",
         icon: "./assets/img/laposte.svg",
-		color: #FFC805,
+		color: "#FFC805",
 		label:"Laposte",
 		category: "Administratif"
     },
