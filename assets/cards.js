@@ -102,7 +102,7 @@ const cards = [
         title: "NounouTop",
         url: "https://www.nounou-top.fr/",
         icon: "./assets/img/nounoutop.svg",
-		label:"NounouTop",
+		label:"nounou-top",
 		category: "Administratif"
     },
 
@@ -123,6 +123,17 @@ const cards = [
 		category: "Administratif"
     },
 
+
+	
+	    {
+        title: "Laposte",
+        url: "https://www.laposte.fr/",
+        icon: "./assets/img/laposte.svg",
+		color: #FFC805,
+		label:"Laposte",
+		category: "Administratif"
+    },
+	
     {
         title: "Crédit Agricole",
         url: "https://www.ca-sudrhonealpes.fr/",
