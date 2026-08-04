@@ -13,10 +13,10 @@
 
 
 :root {
-	--couleur-primaire : #001a33; 
-	--couleur-secondaire : #F28CBA;
-	--couleur-accent: #7ab3eb;
-	--couleur-hover: #EC5197;
+	--couleur-primaire : #1F497D; 
+	--couleur-secondaire : #9B59B6;
+	--couleur-accent: #FFEAEA;
+	--couleur-hover: #8E44AD;
 	
 	/*
 	--couleur-primaire : #00140b; 
@@ -349,11 +349,12 @@ kbd {
 
 .orima {
 	color: white;
+	margin-left: 0.3em;
 }
 
 .works {
 	color: var(--couleur-secondaire);
-	margin-left: 0.2em;
+	margin-left: 0.3em;
 }
 
 @keyframes logoPulse {
