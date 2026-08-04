@@ -16,7 +16,7 @@ const cards = [
 //-----------------------
 	{
 		title: "Carte de visite numérique",
-		url: "https://devmj00.github.io/carte_visite/",
+		url: "https://orimaworks.github.io/carte_visite/",
 		icon: null,
 		text: "⭐️ Carte de Visite",
 		label: " ",
@@ -25,7 +25,7 @@ const cards = [
 	
 	{
 		title: "Annonce T3 Eybens",
-		url: "https://devmj00.github.io/Appart_Eybens/",
+		url: "https://orimaworks.github.io/Appart_Eybens/",
 		// icon: "https://github.com/DEVMJ00/Appart_Eybens/blob/main/cover.webp?raw=true",
 		icon: null,
 		text: "⭐️ T3 EYBENS",
@@ -35,7 +35,7 @@ const cards = [
 	
 	{
 		title: "Portfolio",
-		url: "https://devmj00.github.io/",
+		url: "https://orimaworks.github.io/",
 		icon: null,
 		text: "⭐️ Portfolio",
 		label: " ",
