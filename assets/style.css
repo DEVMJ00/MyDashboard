@@ -66,7 +66,7 @@ body.dark button {
 	border: solid 1px #00CC33;
 	/* border-radius: 0px; */
 	background-color: var(--dark-background-card-color);
-	color: var(--dark-couleur-texte);
+	color: dimgray;
 }
 
 /*
@@ -78,10 +78,10 @@ aside.dark {
 
 */
 body.dark .card {
-	border: solid 1px #00CC33;
+	/*border: solid 1px #00CC33;*/
 	background-color: var(--dark-background-card-color);
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); 
-	color: var(--dark-couleur-texte);
+	color: dimgray;
 }
 
 body.dark .navbar {
@@ -435,9 +435,9 @@ main {
     align-items: center;
     gap: 10px;
     padding: 12px;
-    background-color: snow;
+    background-color: whitesmoke;
     /* background: var(--couleur-secondaire); */
-	border-bottom : groove 2px var(--couleur-primaire);
+	border-bottom : ridge 3px var(--couleur-primaire);
     /*border-radius: 12px;*/
     /*margin: 0 15px 20px;*/
 }
