@@ -353,6 +353,7 @@ kbd {
 
 .works {
 	color: var(--couleur-secondaire);
+	margin-left: 0.2em;
 }
 
 @keyframes logoPulse {
