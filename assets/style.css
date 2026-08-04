@@ -13,24 +13,24 @@
 
 
 :root {
-	--couleur-primaire : #1F497D; 
-	--couleur-secondaire : #9B59B6;
-	--couleur-accent: #FFEAEA;
-	--couleur-hover: #8E44AD;
+	--couleur-primaire : #001a33; 
+	--couleur-secondaire : #F28CBA;
+	--couleur-accent: #7ab3eb;
+	--couleur-hover: #EC5197;
 	
 	/*
 	--couleur-primaire : #00140b; 
 	--couleur-secondaire : #00A0D4;
 	--couleur-hover: #065A82;
 	*/
-	--background-color: ghostwhite;
+	--background-color: ivory;
 	--header-height : 5vh;
 	--footer-height: 7vh;
     /* --surface-color: #ffffff; */
     /* --border-color: #9b9b9b; */
     --couleur-texte: #000000;
 	--dark-couleur-texte: #dbdbdb;
-	--dark-background-color: #34495E;
+	--dark-background-color: #001a33;
 	--dark-background-card-color: #607D8B;
     --code-bg: #eef1f7;
     --dark-code-bg: #141D38;
@@ -440,7 +440,7 @@ main {
     align-items: center;
     gap: 10px;
     padding: 12px;
-    background: var(--background-color);
+    background-color: ivory;
     /* background: var(--couleur-secondaire); */
 	border-bottom : solid 2px var(--couleur-primaire);
     /*border-radius: 12px;*/
