@@ -427,10 +427,6 @@ const cards = [
     },
 
 
-
-
-
-
     {
         title: "DTC",
         url: "https://danstonchat.com/latest.html",
@@ -492,7 +488,7 @@ const cards = [
 //-----------------------
 	 {
         title: "Ulis",
-        url: "http://srvuweb-p1//ULISNGE/index.do?clientHostName=%clientname%",
+        url: "https://ulis.sdh.fr/ULISNGE/index.do",
         text: "Ulis",
 		label:"ULIS",
         color: "#8FA7C8"
