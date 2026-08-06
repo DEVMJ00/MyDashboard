@@ -160,7 +160,7 @@ const cards = [
 
     {
         title: "EDF",
-        url: "https://espace-client.edf.fr/",
+        url: "https://espace-client.edf.fr/sso/XUI/#login/",
         icon: "./assets/img/edf.png",
 		label:"E.D.F",
 		category: "Administratif"
